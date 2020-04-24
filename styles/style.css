@@ -1,0 +1,477 @@
+*
+{
+    font-family: 'Open Sans';
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    animation: websiteFadein 2s;
+}
+
+@keyframes websiteFadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white!important;
+    opacity: 90%;
+    height: 10vh;
+}
+
+.navbar-brand img {
+    margin-left: 3vw;
+    width: 50px;
+    /*width: 125px;*/
+    height: auto;
+}
+
+.nav-item {
+    margin-right: 2vw;
+}
+
+.nav-link {
+    color: black!important;
+}
+
+.nav-link:hover {
+    color: #8c1515!important;
+}
+
+.navbar-nav {
+    margin-right: 1vw;
+}
+
+.ml-auto {
+    text-align: center;
+}
+
+.intro-flex {
+    margin-left: 11vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.intro-text {
+    margin-top: 13%;
+    margin-right: 5%;
+}
+
+.intro1 {
+    font-size: 1.25vw;
+}
+
+.intro2 {
+    font-size: 7vw;
+}
+
+.intro3 {
+    font-size: 2.5vw;
+    margin-bottom: 3%;
+}
+
+.wrap {
+    color: #8c1515;
+}
+
+.intro4 {
+    font-size: 1.5vw;
+    margin-bottom: 5%;
+}
+
+.intro-btn {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75vw 1vw;
+    font-size: 1vw;
+}
+
+.intro-btn a {
+    color: black;
+    text-decoration: none;
+}
+
+.intro-img {
+    width: 45vw;
+    height: auto;
+    margin-top: 4%;
+}
+
+.transition-div {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.transition {
+    cursor: pointer;
+}
+
+.transition i {
+    font-size: 4vw;
+    color: #8c1515;
+}
+
+.icons
+{
+    z-index: 1;
+    position: fixed;
+    top: 55vh;
+}
+
+.icons ul
+{
+    list-style: none;
+}
+
+.icons ul li
+{
+    cursor: pointer;
+    margin-left: 2.5vw;
+    margin-top: 3vh;
+}
+
+.icons ul li i 
+{
+    font-size: 1.75vw;
+    /*font-size: 30px;*/
+}
+
+.icons ul li a
+{
+    color: black;
+}
+
+.github-link:hover
+{
+    color: #8C1515;
+}
+
+.linkedin-link:hover
+{
+    color: #8C1515;
+}
+
+.devpost-link:hover
+{
+    color: #8C1515;
+}
+
+.email-link:hover
+{
+    color: #8C1515;
+}
+
+.vertical-line1
+{
+    border-left: 1px solid #8C1515;
+    height: 18vh;
+    margin-left: 1.9vw!important;
+}
+
+.vertical-line2
+{
+    border-left: 1px solid #8C1515;
+    height: 15.5vh;
+    margin-left: 3.4vw!important;
+}
+
+.about-me {
+    margin-top: 15vh;
+    margin-left: 11vw;
+}
+
+.about-me-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me-img {
+    /*align-self: center; to center image use this*/
+    display: block; /* puts image to the top */
+    margin-bottom: auto;
+    height: auto;
+    width: 20vw;
+    margin-right: 7%;
+}
+
+.about-me1 {
+    font-size: 1.8vw;
+}
+
+.link {
+    color: #8c1515;
+}
+
+.link:hover
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: #8C1515;
+}
+
+.about-me2 {
+    width: 50vw;
+    font-size: 1.05vw;
+    line-height: 170%;
+}
+
+.quote {
+    text-align: right;
+    font-style: italic;
+    font-size: 1.5vw;
+    color: #8c1515;
+}
+
+.about-me3 {
+    font-size: 1.8vw;
+}
+
+.about-me4 {
+    width: 50vw;
+    font-size: 1.05vw;
+    line-height: 170%;
+}
+
+.skills-languages {
+    width: 50vw;
+    font-size: 1vw;
+    line-height: 170%;
+}
+
+.skills-technologies {
+    width: 50vw;
+    font-size: 1vw;
+    line-height: 170%;
+    margin-bottom: 5%;
+}
+
+.about-me-btn {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75vw 1vw;
+    font-size: 1vw;
+}
+
+.about-me-btn a {
+    color: black;
+    text-decoration: none;
+}
+
+.experience {
+    margin-top: 15vh;
+}
+
+.experience-title {
+    font-size: 1.8vw;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.company {
+    color: black;
+}
+
+.ibm {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    margin-bottom: 3%;
+}
+
+.ibm-img {
+    align-self: center;
+    width: 20vw;
+    height: auto;
+    margin-right: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ibm-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.ibm-info h2 {
+    font-size: 1.2vw;
+    color: #8c1515;
+}
+
+.ibm-info h3 {
+    font-size: 1.1vw;
+    color:rgb(47, 27, 158);
+}
+
+.ibm-info p {
+    font-size: 1vw;
+}
+
+.cansofcom {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    margin-bottom: 3%;
+}
+
+.cansofcom-img {
+    align-self: center;
+    width: 20vw;
+    height: auto;
+    margin-right: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cansofcom-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.cansofcom-info h2 {
+    font-size: 1.2vw;
+    color: #8c1515;
+}
+
+.cansofcom-info h3 {
+    font-size: 1.1vw;
+    color:rgb(47, 27, 158);
+}
+
+.cansofcom-info p {
+    font-size: 1vw;
+}
+
+.ford {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    margin-bottom: 3%;
+}
+
+.ford-img {
+    align-self: center;
+    width: 20vw;
+    height: auto;
+    margin-right: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ford-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.ford-info h2 {
+    font-size: 1.2vw;
+    color: #8c1515;
+}
+
+.ford-info h3 {
+    font-size: 1.1vw;
+    color:rgb(47, 27, 158);
+}
+
+.ford-info p {
+    font-size: 1vw;
+}
+
+.wato {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    margin-bottom: 3%;
+}
+
+.wato-img {
+    align-self: center;
+    width: 20vw;
+    height: auto;
+    margin-right: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wato-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.wato-info h2 {
+    font-size: 1.2vw;
+    color: #8c1515;
+}
+
+.wato-info h3 {
+    font-size: 1.1vw;
+    color:rgb(47, 27, 158);
+}
+
+.wato-info p {
+    font-size: 1vw;
+}
+
+.uofc {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    margin-bottom: 3%;
+}
+
+.uofc-img {
+    align-self: center;
+    width: 20vw;
+    height: auto;
+    margin-right: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.uofc-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.uofc-info h2 {
+    font-size: 1.2vw;
+    color: #8c1515;
+}
+
+.uofc-info h3 {
+    font-size: 1.1vw;
+    color:rgb(47, 27, 158);
+}
+
+.uofc-info p {
+    font-size: 1vw;
+}
+
+.projects {
+    margin-top: 15vh;
+}
+
+.projects-title {
+    font-size: 1.8vw;
+    text-align: center;
+    margin-bottom: 3%;
+}

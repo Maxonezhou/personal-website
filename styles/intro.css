@@ -10,6 +10,7 @@
 {
     stroke-dasharray: 802;
     stroke-dashoffset: 801.3139038085938;
+    animation-delay: 0.5s;
     animation: lineDraw 2s ease forwards;
 }
 
@@ -17,6 +18,7 @@
 {
     stroke-dasharray: 452;
     stroke-dashoffset: 451.5810852050781;
+    animation-delay: 0.5s;
     animation: lineDraw 2s ease forwards;
 }
 
@@ -24,6 +26,7 @@
 {
     stroke-dasharray: 375;
     stroke-dashoffset: 374.9039306640625;
+    animation-delay: 0.5s;
     animation: lineDraw 2s ease forwards;
 }
 
@@ -31,6 +34,7 @@
 {
     stroke-dasharray: 500;
     stroke-dashoffset: 499.50390625;
+    animation-delay: 0.5s;
     animation: lineDraw 2s ease forwards;
 }
 
@@ -38,6 +42,7 @@
 {
     stroke-dasharray: 460;
     stroke-dashoffset: 459.5672607421875;
+    animation-delay: 0.5s;
     animation: lineDraw 2s ease forwards;
 }
 
@@ -45,6 +50,7 @@
 {
     stroke-dasharray: 399;
     stroke-dashoffset: 398.18359375;
+    animation-delay: 0.5s;
     animation: lineDraw 2s ease forwards;
 }
 
@@ -52,6 +58,7 @@
 {
     stroke-dasharray: 394;
     stroke-dashoffset: 393.3783264160156;
+    animation-delay: 0.5s;
     animation: lineDraw 2s ease forwards;
 }
 

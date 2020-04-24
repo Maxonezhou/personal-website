@@ -70,7 +70,9 @@
                             </button>
                         </a>
                     </div>
-                    <img class="intro-img" src="./imgs/intro.svg">
+                    <a class="intro-img-click" id="intro-img-click" onclick="blastOff()">
+                        <img class="intro-img" id="intro-img" src="./imgs/intro.svg">
+                    </a>
                 </div>
                 <div class="transition-div"><a class="transition hvr-icon-hang" href="#about-me"><i class="fa fa-angle-down hvr-icon"></i></a></div>
             </div>
@@ -120,12 +122,11 @@
                             <p class="skills-languages">
                                  <strong> Languages:  </strong>
                                    C/C++ 
+                                 • Javascript | HTML | CSS
+                                 • Java | AspectJ
                                  • VHDL 
                                  • ARM Assembly 
                                  • Matlab 
-                                 • Java | AspectJ 
-                                 • Javascript 
-                                 • HTML and CSS    
                             </p>
                             <p class="skills-technologies">
                                 <strong> Technologies: </strong>
@@ -268,9 +269,126 @@
             <div class="projects-inc" id="projects">_</div>
             <div class="projects">
                 <div class="projects-title">
-                    Here's What I've Been Working On.
+                    <strong> Here's What I've Been Working On. </strong>
                 </div>
-
+                <div class="cpu">
+                    <div class="cpu-info">
+                        <h2>
+                            <strong> 8-Bit Homemade Breadboard Computer </strong>
+                        </h2>
+                        <p>
+                            An 8-bit central processing unit (CPU) built entirely from scratch using TTL logic chips on breadboards.
+                        </p>
+                        <a class="hvr-icon-forward" href="cpu.html">
+                            <button class="cpu-btn">
+                                View Project
+                                <i class="fa fa-arrow-right hvr-icon"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <!--<a class="cpu-img-link" href="cpu.html">-->
+                        <img class="cpu-img" src="./imgs/cpu2.jpg">
+                   <!-- </a>-->
+                </div>
+                <div class="guardian">
+                    <div class="guardian-info">
+                        <h2>
+                            <strong> Guardian - IoT Firefighter Helmet </strong>
+                        </h2>
+                        <p>
+                            🏆 
+                                <span class="hvr-underline-from-left">
+                                    <a class="link" href="https://hackthenorth.com/" target="_blank">Hack the North</a>
+                                </span> 2019 Winner <br>
+                            🏆 Major League Hacking Best Use of Google Cloud <br>
+                            🏆 Canadian Special Operation Forces Command Award <br> <br>
+                            An IoT enabled firefighter helmet tracking real-time CO2, TVOC, temperature, humidity, pressure, and
+                            altitude readings. Data is transferred in real-time over IoT to a remote dashboard for control center, personnel.
+                        </p>
+                        <a class="hvr-icon-forward" href="guardian.html">
+                            <button class="guardian-btn">
+                                View Project
+                                <i class="fa fa-arrow-right hvr-icon"></i>
+                            </button>
+                        </a>
+                        <span class="hvr-grow">
+                            <a class="guardian-socials" href="https://github.com/Maxonezhou/Guardian">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </span>
+                        <span class="hvr-grow">
+                            <a class="guardian-socials" href="https://devpost.com/software/guardian-2n7q3s">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <img class="guardian-img" src="./imgs/guardian.jpg">
+                </div>
+                <div class="detritusAI">
+                    <div class="detritusAI-info">
+                        <h2>
+                            <strong> DetritusAI - IoT Smart City Waste Collection System </strong>
+                        </h2>
+                        <p>
+                            🏆 
+                            <span class="hvr-underline-from-left-link">
+                                <a class="link" href="https://ieee.utoronto.ca/makeuoft/" target="_blank">MakeUofT</a>
+                            </span> Best Use of Solace PubSub+ Cloud Message Brokering Platform <br>
+                            🏆 Major League Hacking Best Use of Google Cloud <br> <br>
+                            An urban smart city waste collection system leveraging machine learning, IoT, and route optimization.
+                        </p>
+                        <a class="hvr-icon-forward" href="detritusAI.html">
+                            <button class="detritusAI-btn">
+                                View Project
+                                <i class="fa fa-arrow-right hvr-icon"></i>
+                            </button>
+                        </a>
+                        <span class="hvr-grow">
+                            <a class="detritusAI-socials" href="https://github.com/Maxonezhou/DetritusAI">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </span>
+                        <span class="hvr-grow">
+                            <a class="detritusAI-socials" href="https://devpost.com/software/detritusai-lsrpeq">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <img class="detritusAI-img" src="./imgs/detritusAI.jpg">
+                </div>
+                <div class="fireguard">
+                    
+                    <div class="fireguard-info">
+                        <h2>
+                            <strong> Fireguard - IoT Forest Fire Detection System </strong>
+                        </h2>
+                        <p>
+                            🏆
+                                <span class="hvr-underline-from-left-link">
+                                    <a class="link" href="https://qhacks.io/" target="_blank">Queens Hacks</a>
+                                </span> 2020 Sunlife Financial Best Health Hack 🏆<br>
+                            🏆 Major League Hacking Best Use of Google Cloud <br><br>
+                            Leveraging IoT and environmental data to detect and prevent the spread of forest fires.
+                        </p>
+                        <a class="hvr-icon-forward" href="fireguard.html">
+                            <button class="fireguard-btn">
+                                View Project
+                                <i class="fa fa-arrow-right hvr-icon"></i>
+                            </button>
+                        </a>
+                        <span class="hvr-grow">
+                            <a class="fireguard-socials" href="https://github.com/Maxonezhou/DetritusAI">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </span>
+                        <span class="hvr-grow">
+                            <a class="fireguard-socials" href="https://devpost.com/software/detritusai-lsrpeq">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <img class="fireguard-img" src="./imgs/fireguard.jpg">
+                </div>
             </div>
         </div>
         <script>
@@ -283,6 +401,16 @@
             } else {
                 console.info( "This page is not reloaded");
             }*/
+
+            function blastOff() {
+                console.log('hello');
+                document.getElementById("intro-img").style.position = "absolute";
+                document.getElementById("intro-img").style.animation = "blastOff 3s";
+                setTimeout(function() {
+                    document.getElementById("intro-img").style.removeProperty("animation");
+                    document.getElementById("intro-img").style.removeProperty("position");
+                }, 3000);
+            }
         </script>
         <script src="./scripts/typewriter.js"></script>
         <script src="./scripts/scrollReveal.js"></script>

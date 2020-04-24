@@ -199,33 +199,65 @@ scroll.reveal('.experience-title', {distance: '20%',
 scroll.reveal('.ibm', {distance: '20%',
                                         origin: 'bottom',
                                         opacity: 0,
-                                        delay: 300,
+                                        delay: 350,
                                         cleanup: true
                                         });
 scroll.reveal('.cansofcom', {distance: '20%',
                                 origin: 'bottom',
                                 opacity: 0,
-                                delay: 300,
+                                delay: 400,
                                 cleanup: true
                                 });
 scroll.reveal('.ford', {distance: '20%',
                                 origin: 'bottom',
                                 opacity: 0,
-                                delay: 300,
+                                delay: 450,
                                 cleanup: true
                                 });
 scroll.reveal('.wato', {distance: '20%',
                                 origin: 'bottom',
                                 opacity: 0,
-                                delay: 300,
+                                delay: 500,
                                 cleanup: true
                                 });
 scroll.reveal('.uofc', {distance: '20%',
                                 origin: 'bottom',
                                 opacity: 0,
-                                delay: 300,
+                                delay: 550,
                                 cleanup: true
                                 });
 
+// Projects Section 
+
+scroll.reveal('.projects-title', {distance: '20%',
+                        origin: 'bottom',
+                        opacity: 0,
+                        delay: 300,
+                        cleanup: true
+                        });
+scroll.reveal('cpu', {distance: '20%',
+                        origin: 'bottom',
+                        opacity: 0,
+                        delay: 350,
+                        cleanup: true
+                        });
+scroll.reveal('.guardian', {distance: '20%',
+                        origin: 'bottom',
+                        opacity: 0,
+                        delay: 400,
+                        cleanup: true
+                        });
+scroll.reveal('.detritusAI', {distance: '20%',
+                        origin: 'bottom',
+                        opacity: 0,
+                        delay: 450,
+                        cleanup: true
+                        });
+scroll.reveal('.fireguard', {distance: '20%',
+                        origin: 'bottom',
+                        opacity: 0,
+                        delay: 500,
+                        cleanup: true
+                        });
 //scroll.destroy();
 //scroll.reveal('.about-me-img', spotlight);*/

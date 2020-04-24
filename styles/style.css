@@ -25,7 +25,7 @@ body {
 }
 
 .navbar {
-    position: fixed;
+
     width: 100%;
     top: 0;
     background-color: white!important;
@@ -39,6 +39,12 @@ body {
     /*width: 125px;*/
     height: auto;
 }
+
+/*@media (max-width: 768px) {
+    .sticky-top {
+        position: static!important;
+    }
+}*/
 
 .nav-item {
     margin-right: 2vw;
@@ -58,6 +64,8 @@ body {
 
 .ml-auto {
     text-align: center;
+    background-color:white;
+    opacity: 1;
 }
 
 .intro-flex {
@@ -108,10 +116,34 @@ body {
     text-decoration: none;
 }
 
+.intro-img-click {
+    cursor: pointer;
+}
+
+@keyframes blastOff {
+    0% {
+        margin-top: 6%;
+    }
+    50% {
+        margin-top: -100%;
+        opacity: 0;
+        z-index: -1;
+    }
+    75% {
+        margin-top: 100%;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        margin-top: 3%;
+        opacity: 1;
+    }
+}
+
 .intro-img {
     width: 45vw;
     height: auto;
-    margin-top: 4%;
+    margin-top: 8%;
 }
 
 .transition-div {
@@ -193,7 +225,7 @@ body {
 }
 
 .about-me {
-    margin-top: 15vh;
+    margin-top: 14vh;
     margin-left: 11vw;
 }
 
@@ -278,7 +310,7 @@ body {
 }
 
 .experience {
-    margin-top: 15vh;
+    margin-top: 14vh;
 }
 
 .experience-title {
@@ -304,7 +336,7 @@ body {
     width: 20vw;
     height: auto;
     margin-right: 5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .ibm-info {
@@ -339,7 +371,7 @@ body {
     width: 20vw;
     height: auto;
     margin-right: 5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cansofcom-info {
@@ -374,7 +406,7 @@ body {
     width: 20vw;
     height: auto;
     margin-right: 5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .ford-info {
@@ -409,7 +441,7 @@ body {
     width: 20vw;
     height: auto;
     margin-right: 5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .wato-info {
@@ -444,7 +476,7 @@ body {
     width: 20vw;
     height: auto;
     margin-right: 5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .uofc-info {
@@ -467,11 +499,255 @@ body {
 }
 
 .projects {
-    margin-top: 15vh;
+    margin-top: 14vh;
 }
 
 .projects-title {
     font-size: 1.8vw;
     text-align: center;
     margin-bottom: 3%;
+}
+
+.cpu {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    margin-bottom: 3%;
+    border-left: 0.5vw solid #ffafaf;
+}
+
+.cpu-img-link {
+    cursor: pointer;
+}
+
+.cpu-img {
+    width: 20vw;
+    height: auto;
+    align-self: center;
+    margin: 3%;
+    margin-right: 0;
+    /*opacity: 70%;*/
+}
+
+/*.cpu-img:hover {
+    transition-duration: 0.5s;
+    opacity: 1;
+}*/
+
+.cpu-info {
+    display: block;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 3%;
+}
+
+.cpu-info h2 {
+    font-size: 1.2vw;
+    margin-bottom: 3%;
+}
+
+.cpu-info p {
+    font-size: 1vw;
+    margin-bottom: 3%;
+}
+
+.cpu-btn {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75vw 1vw;
+    font-size: 1vw;
+}
+
+.cpu-btn a {
+    color: black;
+    text-decoration: none;
+}
+
+.guardian {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    margin-bottom: 3%;
+    border-left: 0.5vw solid #ffafaf;
+}
+
+.guardian-img-link {
+    cursor: pointer;
+}
+
+.guardian-img {
+    width: 20vw;
+    height: auto;
+    align-self: center;
+    margin: 3%;
+    margin-right: 0;
+}
+
+.guardian-info {
+    display: block;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 3%;
+}
+
+.guardian-info h2 {
+    font-size: 1.2vw;
+    margin-bottom: 3%;
+}
+
+.guardian-info p {
+    font-size: 1vw;
+    margin-bottom: 3%;
+}
+
+.guardian-btn {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75vw 1vw;
+    font-size: 1vw;
+}
+
+.guardian-btn a {
+    color: black;
+    text-decoration: none;
+}
+
+.guardian-socials {
+    color: black;
+    font-size: 2vw;
+    margin-left: 1vw;
+}
+
+.guardian-socials:hover {
+    color: #8c1515;
+}
+
+
+
+.detritusAI {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+
+    margin-bottom: 3%;
+    border-left: 0.5vw solid #ffafaf;
+}
+
+.detritusAI-img {
+    width: 20vw;
+    height: auto;
+    align-self: center;
+    margin: 3%;
+    margin-right: 0;
+}
+
+.detritusAI-info {
+    display: block;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 3%;
+}
+
+.detritusAI-info h2 {
+    font-size: 1.2vw;
+    margin-bottom: 3%;
+}
+
+.detritusAI-info p {
+    font-size: 1vw;
+    margin-bottom: 3%;
+}
+
+.detritusAI-btn {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75vw 1vw;
+    font-size: 1vw;
+}
+
+.detritusAI-btn a {
+    color: black;
+    text-decoration: none;
+}
+
+.detritusAI-socials {
+    color: black;
+    font-size: 2vw;
+    margin-left: 1vw;
+}
+
+.detritusAI-socials:hover {
+    color: #8c1515;
+}
+
+.fireguard {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+
+    margin-bottom: 3%;
+    border-left: 0.5vw solid #ffafaf;
+}
+
+.fireguard-img {
+    width: 20vw;
+    height: auto;
+    align-self: center;
+    margin: 3%;
+    margin-right: 0;
+}
+
+.fireguard-info {
+    display: block;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 3%;
+}
+
+.fireguard-info h2 {
+    font-size: 1.2vw;
+    margin-bottom: 3%;
+}
+
+.fireguard-info p {
+    font-size: 1vw;
+    margin-bottom: 3%;
+}
+
+.fireguard-btn {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75vw 1vw;
+    font-size: 1vw;
+}
+
+.fireguard-btn a {
+    color: black;
+    text-decoration: none;
+}
+
+.fireguard-socials {
+    color: black;
+    font-size: 2vw;
+    margin-left: 1vw;
+}
+
+.fireguard-socials:hover {
+    color: #8c1515;
 }

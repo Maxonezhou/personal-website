@@ -259,6 +259,15 @@ scroll.reveal('.fireguard', {distance: '20%',
                         delay: 500,
                         cleanup: true
                         });
+
+// Outro
+scroll.reveal('.outro', {distance: '20%',
+                        origin: 'bottom',
+                        opacity: 0,
+                        delay: 300,
+                        cleanup: true
+                        });
+
 //scroll.destroy();
 //scroll.reveal('.about-me-img', spotlight);*/
 /*if(performance.navigation.type == 2)

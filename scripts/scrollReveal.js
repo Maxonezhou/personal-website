@@ -106,7 +106,7 @@ scroll.reveal('.transition-div', {distance: '50%',
                                 });
 
 // Intro Icona
-scroll.reveal('.github', {distance: '150%',
+/*scroll.reveal('.github', {distance: '150%',
                                 origin: 'bottom',
                                 opacity: 0,
                                 delay: 1400,
@@ -135,7 +135,7 @@ scroll.reveal('.vertical-line2', {distance: '150%',
                                 opacity: 0,
                                 delay: 1800,
                                 cleanup: true
-                                });
+                                });*/
 
 // About me on landing page
 
@@ -235,7 +235,7 @@ scroll.reveal('.projects-title', {distance: '20%',
                         delay: 300,
                         cleanup: true
                         });
-scroll.reveal('cpu', {distance: '20%',
+scroll.reveal('.cpu', {distance: '20%',
                         origin: 'bottom',
                         opacity: 0,
                         delay: 350,
@@ -261,3 +261,7 @@ scroll.reveal('.fireguard', {distance: '20%',
                         });
 //scroll.destroy();
 //scroll.reveal('.about-me-img', spotlight);*/
+/*if(performance.navigation.type == 2)
+{
+    scroll.destroy();
+}*/

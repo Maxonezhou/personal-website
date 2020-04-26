@@ -10,263 +10,145 @@ var spotlight = {
     delay: 100
 };
 
-function myCallback(scroll, name) {
-    scroll.clean(name);
-}
 
 // Navbar effects
+
+var navbar = [
+    ".nav1",
+    ".nav2",
+    ".nav3",
+    ".nav4",
+    ".nav5",
+    ".nav6",
+]
 
 scroll.reveal('.navbar-brand', {distance: '150%',
                                 origin: 'bottom',
                                 opacity: 0,
                                 cleanup: true
                                 });
-
-scroll.reveal('.nav1', {distance: '150%',
+let counter = 300;
+for (x in navbar) {
+    console.log(counter);
+    console.log(navbar[x]);
+    scroll.reveal(navbar[x], {distance: '150%',
                                 origin: 'bottom',
                                 opacity: 0,
-                                delay: 300,
+                                delay: counter,
                                 cleanup: true
                                 });
-scroll.reveal('.nav2', {distance: '150%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 400,
-                                cleanup: true
-                                });
-scroll.reveal('.nav3', {distance: '150%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 500,
-                                cleanup: true
-                                });
-scroll.reveal('.nav4', {distance: '150%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 600,
-                                cleanup: true
-                                });
-scroll.reveal('.nav5', {distance: '150%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 700,
-                                cleanup: true
-                                });
-scroll.reveal('.nav6', {distance: '150%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 800,
-                                cleanup: true
-                                });
-
+    counter = counter + 100;
+}
 
 // Intro effects
 
-scroll.reveal('.intro1', {distance: '50%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 900,
-                                cleanup: true
-                                });
-scroll.reveal('.intro2', {distance: '50%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 1000,
-                                cleanup: true
-                                });
-scroll.reveal('.intro3', {distance: '50%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 1100,
-                                cleanup: true
-                                });
-scroll.reveal('.intro4', {distance: '50%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 1200,
-                                cleanup: true
-                                });
-scroll.reveal('.intro-btn', {distance: '50%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 1300,
-                                cleanup: true
-                                });
-scroll.reveal('.intro-img', {distance: '20%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 900,
-                                cleanup: true
-                                });
-scroll.reveal('.transition-div', {distance: '50%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 1400,
-                                cleanup: true
-                                });
+var intro = [
+    ".intro1",
+    ".intro2",
+    ".intro3",
+    ".intro4",
+    ".intro-btn",
+    ".intro-img",
+    ".transition-div"
+]
 
-// Intro Icona
-/*scroll.reveal('.github', {distance: '150%',
+counter = 900;
+for (x in intro) {
+    scroll.reveal(intro[x], {distance: '50%',
                                 origin: 'bottom',
                                 opacity: 0,
-                                delay: 1400,
+                                delay: counter,
                                 cleanup: true
                                 });
-scroll.reveal('.linkedin', {distance: '150%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 1500,
-                                cleanup: true
-                                });
-scroll.reveal('.devpost', {distance: '150%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 1600,
-                                cleanup: true
-                                });
-scroll.reveal('.email', {distance: '150%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 1700,
-                                cleanup: true
-                                });
-scroll.reveal('.vertical-line2', {distance: '150%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 1800,
-                                cleanup: true
-                                });*/
+    counter = counter + 100;
+}
 
 // About me on landing page
 
-scroll.reveal('.about-me-img', {distance: '20%',
-                                        origin: 'bottom',
-                                        opacity: 0,
-                                        delay: 300,
-                                        cleanup: true
-                                        });
-scroll.reveal('.about-me1', {distance: '20%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 400,
-                                cleanup: true
-                                });
-scroll.reveal('.about-me2', {distance: '20%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 500,
-                                cleanup: true
-                                });
-scroll.reveal('.quote', {distance: '20%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 600,
-                                cleanup: true
-                                });
-scroll.reveal('.about-me3', {distance: '20%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 700,
-                                cleanup: true
-                                });
-scroll.reveal('.about-me4', {distance: '20%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 800,
-                                cleanup: true
-                                });
-scroll.reveal('.about-me5', {distance: '20%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 900,
-                                cleanup: true
-                                });
-scroll.reveal('.about-me-btn', {distance: '20%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 1000,
-                                cleanup: true
-                                });
+var aboutMe = [
+    ".about-me-img",
+    ".about-me1",
+    ".about-me2",
+    ".quote",
+    ".about-me3",
+    ".about-me4",
+    ".about-me5",
+    "about-me-btn"
+]
+
+counter = 200;
+for (x in aboutMe) {
+    console.log(aboutMe[x]);
+    scroll.reveal(aboutMe[x], {distance: '20%',
+                      origin: 'bottom',
+                      opacity: 0,
+                      delay: counter,
+                      cleanup: true
+                      }); 
+    counter = counter + 50;
+}
 
 // Experience Section
 
-scroll.reveal('.experience-title', {distance: '20%',
+var experience = [
+    ".experience-title",
+    ".ibm",
+    ".cansofcom",
+    ".ford",
+    ".wato",
+    ".uofc"
+]
+
+counter = 200;
+for (x in experience) {
+    scroll.reveal(experience[x], {distance: '20%',
                                 origin: 'bottom',
                                 opacity: 0,
-                                delay: 300,
+                                delay: counter,
                                 cleanup: true
                                 });
-scroll.reveal('.ibm', {distance: '20%',
-                                        origin: 'bottom',
-                                        opacity: 0,
-                                        delay: 350,
-                                        cleanup: true
-                                        });
-scroll.reveal('.cansofcom', {distance: '20%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 400,
-                                cleanup: true
-                                });
-scroll.reveal('.ford', {distance: '20%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 450,
-                                cleanup: true
-                                });
-scroll.reveal('.wato', {distance: '20%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 500,
-                                cleanup: true
-                                });
-scroll.reveal('.uofc', {distance: '20%',
-                                origin: 'bottom',
-                                opacity: 0,
-                                delay: 550,
-                                cleanup: true
-                                });
+}
 
 // Projects Section 
 
-scroll.reveal('.projects-title', {distance: '20%',
-                        origin: 'bottom',
-                        opacity: 0,
-                        delay: 300,
-                        cleanup: true
-                        });
-scroll.reveal('.cpu', {distance: '20%',
-                        origin: 'bottom',
-                        opacity: 0,
-                        delay: 350,
-                        cleanup: true
-                        });
-scroll.reveal('.guardian', {distance: '20%',
-                        origin: 'bottom',
-                        opacity: 0,
-                        delay: 400,
-                        cleanup: true
-                        });
-scroll.reveal('.detritusAI', {distance: '20%',
-                        origin: 'bottom',
-                        opacity: 0,
-                        delay: 450,
-                        cleanup: true
-                        });
-scroll.reveal('.fireguard', {distance: '20%',
-                        origin: 'bottom',
-                        opacity: 0,
-                        delay: 500,
-                        cleanup: true
-                        });
+var projects = [
+    ".projects-title",
+    ".cpu",
+    ".guardian",
+    ".detritusAI",
+    ".fireguard"
+]
 
-// Outro
-scroll.reveal('.outro', {distance: '20%',
+counter = 200;
+for (x in projects) {
+    scroll.reveal(projects[x], {distance: '20%',
                         origin: 'bottom',
                         opacity: 0,
-                        delay: 300,
+                        delay: counter,
                         cleanup: true
                         });
+}
+
+// Footer
+
+var footer = [
+    ".container",
+    ".footer1",
+    ".footer2",
+    ".footer3",
+    ".footer-icons"
+]
+
+counter = 200;
+for (x in footer) {
+    scroll.reveal(footer[x], {distance: '20%',
+                        origin: 'bottom',
+                        opacity: 0,
+                        delay: counter,
+                        cleanup: true
+                        });
+}
+
 
 //scroll.destroy();
 //scroll.reveal('.about-me-img', spotlight);*/

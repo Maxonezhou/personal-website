@@ -76,14 +76,14 @@
                 </div>
                 <div class="transition-div"><a class="transition hvr-icon-hang" href="#about-me"><i class="fa fa-angle-down hvr-icon"></i></a></div>
             </div>
-            <div class="icons">
+            <div class="icons" id="icons">
                 <ul>
-                    <!--<li class="vertical-line1"></li>-->
+                    <!--<li class="vertical-line2"></li>-->
                     <li class="github"><a class="github-link" href="https://github.com/Maxonezhou"><span class="hvr-grow"><i class="fa fa-github"></i></span></a></li>
                     <li class="linkedin"><a class="linkedin-link" href="https://linkedin.com/in/max-zhou"><span class="hvr-grow"><i class="fa fa-linkedin"></i></span></a></li>
                     <li class="devpost"><a class="devpost-link" href="https://devpost.com/Maxonezhou"><span class="hvr-grow"><i class="fa fa-code"></i></span></a></li>
                     <li class="email"><a class="email-link" href="mailto:max.zhou@uwaterloo.ca"><span class="hvr-grow"><i class="fa fa-envelope-o"></i></span></a></li>
-                    <li class="vertical-line2"></li>
+                    <!--<li class="vertical-line2"></li>-->
                 </ul>
             </div>
             <div class="about-me-inc" id="about-me">_</div>
@@ -156,7 +156,7 @@
                 </div>
             </div>
             <div class="experience-me-inc" id="experience">_</div>
-            <div class="experience">
+            <div class="experience" id="experience-div">
                 <div class="experience-title">
                     <strong> Here is What I've Done so Far. </strong>
                 </div>
@@ -267,7 +267,7 @@
                 </div>
             </div>
             <div class="projects-inc" id="projects">_</div>
-            <div class="projects">
+            <div class="projects" id="projects-div">
                 <div class="projects-title">
                     <strong> Here's What I've Been Working On. </strong>
                 </div>
@@ -295,7 +295,7 @@
                         </h2>
                         <p>
                             🏆 
-                                <span class="hvr-underline-from-left">
+                                <span class="hvr-underline-from-left-link">
                                     <a class="link" href="https://hackthenorth.com/" target="_blank">Hack the North</a>
                                 </span> 2019 Winner <br>
                             🏆 Major League Hacking Best Use of Google Cloud <br>
@@ -364,7 +364,7 @@
                             🏆
                                 <span class="hvr-underline-from-left-link">
                                     <a class="link" href="https://qhacks.io/" target="_blank">Queens Hacks</a>
-                                </span> 2020 Sunlife Financial Best Health Hack 🏆<br>
+                                </span> 2020 Sunlife Financial Best Health Hack <br>
                             🏆 Major League Hacking Best Use of Google Cloud <br><br>
                             Leveraging IoT and environmental data to detect and prevent the spread of forest fires.
                         </p>
@@ -388,7 +388,7 @@
                     <img class="fireguard-img" src="./imgs/fireguard.jpg">
                 </div>
             </div>
-            <div class="outro-inc" id="outro">_</div>
+            <!--<div class="outro-inc" id="outro">_</div>
             <div class="outro">
                 <div class="outro-flex">
                     <h2>
@@ -419,8 +419,60 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
+         <!-- Footer -->
+         <footer class="page-footer font-small cyan darken-3" id="footer">
+            <!-- Footer Elements -->
+            <div class="container">
+                <!-- Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-12 py-5 footer-column">
+                        <h3 class="footer1"> 
+                            Get In Touch.
+                        </h3>
+                        <h2 class="footer2">
+                            I believe in big ideas, welcome new opinions, and love meeting new people.
+                        </h2>
+                        <h3 class="footer3">
+                            Shoot me a message and lets build something amazing together.
+                        </h3>
+                        <div class="mb-5 flex-center">
+                            <!-- Github -->
+                            <span class="hvr-grow">
+                                <a class="github-ic footer-icons" href="https://github.com/Maxonezhou">
+                                    <i class="fa fa-github"> </i>
+                                </a>
+                            </span>
+                            <!-- Linkedin -->
+                            <span class="hvr-grow">
+                                <a class="linkedin-ic footer-icons" href="https://linkedin.com/in/max-zhou">
+                                    <i class="fa fa-linkedin"> </i>
+                                </a>
+                            </span>
+                            <!-- Resume -->
+                            <span class="hvr-grow">
+                                <a class="resume-ic footer-icons" href="https://drive.google.com/file/d/1hBlM6braOAAo7Zo7Pdw1OqG5MbxK-QGz/view?usp=sharing">
+                                    <i class="fa fa-file-pdf-o"> </i>
+                                </a>
+                            </span>
+                            <!--Email -->
+                            <span class="hvr-grow">
+                                <a class="email-ic footer-icons" href="mailto:max.zhou@uwaterloo.ca">
+                                    <i class="fa fa-envelope-o"> </i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                <!-- Grid column -->
+                </div>
+                <!-- Grid row-->
+            </div>
+        <div class="footer-copyright text-center py-3">
+            Designed & Built by Max Zhou
+        </div>
+        </footer>
         <script>
             //check for Navigation Timing API support
             /*if (window.performance) {
@@ -441,6 +493,27 @@
                     document.getElementById("intro-img").style.removeProperty("position");
                 }, 3000);
             }
+
+            /*window.addEventListener("scroll", function() {
+                var elementTarget = document.getElementById("footer");
+                //console.log("scrollY: ", window.scrollY);
+                //console.log("scrollY - innerHeight:", window.scrollY - window.innerHeight);
+                //console.log("offsetTop: ", elementTarget.offsetTop);
+                //console.log("offsetHeight: ", elementTarget.offsetHeight);
+                var height = window.screenY + window.outerHeight;
+                var bottom = height + window.scrollY;
+                //console.log("bottom", bottom);
+                if ((bottom >= (elementTarget.offsetTop - 200)) && (bottom <= (elementTarget.offsetTop + elementTarget.offsetHeight))) {
+                    document.getElementById("icons").style.position = "sticky"
+                    console.log("1");
+                }
+
+                if (bottom < elementTarget.offsetTop - 400)
+                {
+                    document.getElementById("icons").style.position = "fixed"
+                    console.log("2");
+                }
+            });*/
         </script>
         <script src="./scripts/typewriter.js"></script>
         <script src="./scripts/scrollReveal.js"></script>

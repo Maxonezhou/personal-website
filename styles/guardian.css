@@ -1,4 +1,4 @@
-/* Stylesheet for cpu.html */
+/* Stylesheet for guardian.html */
 
 *
 {
@@ -76,94 +76,54 @@ body {
     font-size: 1.5vw!important;
 }
 
-.forward-arrow {
-    text-decoration: none;
-    color: black;
-    font-size: 1.5vw!important;
-}
-
-.cpu-project {
+.guardian-project {
     margin: 0 auto;
     width: 60vw;
 }
 
-.cpu-project-title {
-    text-align: center;
+.guardian-project-title {
     font-size: 1.8vw;
     margin-bottom: 2%;
+    margin-top: 2%;
 }
 
-.cpu-subheading {
+.guardian-hackathon {
+    font-size: 1.5vw;
+    margin-bottom: 1%;
+    color: #ffafaf;
+}
+
+.guardian-prizes {
+    font-size: 0.8vw;
+}
+
+.guardian-subheading {
     font-size: 1.5vw;
     margin-bottom: 2%;
     color: #ffafaf;
 }
 
-.cpu-subheading2 {
-    font-size: 1.2vw;
-    margin-bottom: 2%;
-    color: #ffafaf;
+
+.link {
+    color: #8c1515;
 }
 
-.cpu-project-desc-wrapper {
+.link:hover
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: #8C1515;
+}
+
+.guardian-project-desc-wrapper {
     border-left: 0.5vw solid #ffafaf;
 }
 
-.cpu-project-desc {
+.guardian-project-desc {
     font-size: 0.8vw;
     margin-bottom: 2%;
     margin-left: 2%;
     line-height: 170%;
-}
-
-.caption {
-    font-size: 0.9vw;
-    width: 40vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    color: rgb(175, 175, 175);
-}
-
-.cpu-video {
-    width: 40vw;
-    margin-bottom: 2%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cpu-img {
-    width: 40vw;
-    height: auto;
-    margin-bottom: 2%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.projects-btn {
-    margin-top: 20%;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 8px;
-    text-align: center;
-    text-decoration: none;
-    padding: 0.75vw 1vw;
-    font-size: 1vw;
-}
-
-.go-back {
-    padding: 0.75vw 2.1vw;
-}
-
-.projects-btn a {
-    color: black;
-    text-decoration: none;
-}
-
-.next-project {
-    float: right;
 }
 
 .page-footer {

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title> Max Zhou </title>
+        <link rel="stylesheet" href="./styles/cpu.css">
+        <link rel="stylesheet" href="./styles/hover.css">
+        <link rel="icon" href="./imgs/logo8.svg" type="image/svg">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap" rel="stylesheet">
+        <!--<script src="https://unpkg.com/scrollreveal"></script>-->
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <script>
+            var scroll = ScrollReveal({ reset: false });
+        </script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md sticky-top navbar-light">
+                <a class="navbar-brand" href="./index.html"> <img src="./imgs/logo8.svg"><!-- <span class="logo-name"> <strong> Max Zhou </strong> </span> --> </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu ">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item nav1">
+                        <span class="hvr-underline-from-left"> <a class="nav-link" href="landing.html"> Home </a> </span>
+                        </li>
+                        <li class="nav-item nav6">
+                            <span class="hvr-underline-from-left"> <a class="nav-link nav-link-last" href="https://drive.google.com/file/d/1hBlM6braOAAo7Zo7Pdw1OqG5MbxK-QGz/view?usp=sharing" target="_blank"> Resume </a> </span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="cpu-project">
+                <a class="hvr-icon-back" href="./landing.html#projects">
+                    <i class="fa fa-arrow-left hvr-icon back-arrow"></i>
+                </a>
+                <span class="next-arrow">
+                    <a class="hvr-icon-forward" href="./guardian.html">
+                        <i class="fa fa-arrow-right hvr-icon forward-arrow"></i>
+                    </a>
+                </span>
+                <h2 class="cpu-project-title">
+                    <strong> 8-Bit Homemade Breadboard Computer </strong>
+                </h2>
+                <h2 class="cpu-subheading">
+                    Introduction
+                </h2>
+                <div class="cpu-project-desc-wrapper">
+                    <p class="cpu-project-desc">
+                        Computer hardware and cpu architecture has always been something that intrigued me. From designing basic logic circuits
+                        to learning how each component of a CPU interacts with each other, the sheer amount of work and precision to make even 
+                        the simplest of tasks work has always amazed me. Stemming from this interest in computer hardware, designing my own cpu from scratch 
+                        has always been a goal of mine. After completing a couple of courses in analog electronics, digital logic, and 
+                        computer organization, I embarked on a journey to built an 8-bit CPU completely from scratch on a breadboard using only basic logic
+                        chips; here is the result.
+                    </p>
+                </div>
+                <video class="cpu-video" controls>
+                    <source src="./videos/counting.mov" type="video/mp4">
+                </video>
+                <p class="caption">
+                    Video showcasing conditional branching capability on CPU. Counts from 0 to 255, detects overflow and starts counting down to 0. Detects
+                    0 and then starts counting back up to 255 etc.
+                </p>
+                <img class="cpu-img" src="./imgs/cpu.jpg">
+                <div class="cpu-project-desc-wrapper">
+                    <p class="cpu-project-desc">
+                        This breadboard computer followed the famous SAP-1 (Simple as Possible 1) architecture as introduced by Albert Paul Malvino in his book
+                        <span class="book-title">
+                            Digital Computer Electronics
+                        </span>
+                        published in 1977. This very basic model of the computer processor contains only the basic necessities for a functional microprocessor.
+                        However, despite the simple nature of this architecture, the SAP-1 computer still contains the ability to achieve Turing-completeness 
+                        meaning it can carry out any imaginable computable sequence giving its limited resources. Because of this, I thought that this would be
+                        an interesting architecture to follow for the purposes of building an 8-bit CPU completely from scratch.
+                    </p>
+                </div>
+                <h2 class="cpu-subheading">
+                    Now Let's Get Into the Nitty-Gritty
+                </h2>
+                <div class="cpu-project-desc-wrapper">
+                    <p class="cpu-project-desc">
+                        The cpu is built using low level Texas Intruments 74LS series TTL logic chips running on 5V logic. The cpu is composed of a 500hz clock,
+                        a program counter, 16 bytes of SRAM, two general purpose registers, an instruction register, output register, CPU flags register, ALU, 4 7-segment digital output displays,
+                        and 16 lines of control logic built using EEPROMS acting as LUTs. One of the main goals I wanted for this cpu was for it to be Turing complete, thereby giving it the 
+                        capability to carry out any possible computable sequence. In order to accomplish this, I needed to give the computer an instruction set 
+                        mimicing that of a Turing machine by introducing conditional branch instructions. To accomplish this I took the carry bits from the full-adder
+                        circuit as well as the result in the ALU to create a CPU flags register to can detect overflow and zeros. By using this CPU flags register, I now
+                        have the capability to branch on carry as well as branch on zero creating two conditional branching instructions. <br> <br>
+
+                        Here is the complete instruction set: <br> <br>
+                        • Add / Add Immediate <br>
+                        • Subtract / Subtract Immediate <br>
+                        • Load / Load Immediate <br>
+                        • Store <br>
+                        • Branch / Branch if Carry / Branch if Zero  <br>
+                        • Output Result  <br>
+                        • No Operation (NOP) <br>
+                        • Halt Clock <br>
+                    </p>
+                </div>
+                <h2 class="cpu-subheading">
+                    What I Learned
+                </h2>
+                <div class="cpu-project-desc-wrapper">
+                    <p class="cpu-project-desc">
+                        After completing this project, I have gained a newfound appreciation for everything that goes into designing a CPU. With only 8-bit instructions and arithmetic operations on this homemade CPU, this project pales in comparison to the CPU in the device you are using to read this. Almost all modern computer processors, from companies such as Intel and AMD, run on 64-bit logic meaning just the basic hardware in this computer would have to be expanded 8 times and on top of that, these processors are equipped with a much more complicated and sophisticated instruction set requiring even more hardware to perfect. However, with everything condensed into 8-bits, this project still allowed me to gain a much deeper understanding of the fundamental operations of a computer and what is happening beneath the surface of these devices you and I use almost every day. So with that in mind, here are a couple of things I learned relating to both circuits design and life in general:
+                    </p>
+                </div>
+                <h2 class="cpu-subheading2">
+                    Don't be afraid to make mistakes.
+                </h2>
+                <div class="cpu-project-desc-wrapper">
+                    <p class="cpu-project-desc">
+                        While building this project, I spend more time debugging than anything else. Ensuring the correct operation of the different modules, checking logic levels, and handling undefined logic states gave me much more hands-on experience compared to simply designing these circuits on paper. The hours of debugging forced me to understand the behavior of each of these modules and illustrated how noise and imperfect conditions can play a huge role in practical circuit design.
+                    </p>
+                </div>
+                <h2 class="cpu-subheading2">
+                    Little things can make a big difference - How the Butterfly Effect Reveals itself in Circuit Design
+                </h2>
+                <div class="cpu-project-desc-wrapper">
+                    <p class="cpu-project-desc">
+                        Sometimes the smallest changes can have big effects. This idea rings true in the widely known concept of Chaos Theory dubbed the Butterfly Effect which states that small changes in the initial conditions of a system can result in larger changes in a later state. In circuit design, hundreds of signals are traveling at a time between different modules and these signals are perpetuated by the use of tiny circuit elements which, when put together, will influence the state and clarity of the signal being outputted. An example of this in my own experience is the flipping of a switch from a high to a low signal. Ideally, as the switch changes from ON to OFF, the wire breaks contact with the HIGH signal and connects with the LOW signal without any noise in the system, however, in practice, as the switch breaks contact with one signal and connects with the other, bouncing on the microscopic level can cause undefined states to occur leading to unstable output signals. While this microscopic bounce may not seem a lot, the resulting unstable signal can be fed into a module that reads the signal improperly and then it itself will send out an improper signal leading to large scale failure in the circuit. In the case of this example, I was able to fix this by pulling the switch output to a HIGH level using a small capacitor but this goes to show how such a small difference can lead to large differences in the final output. It is important to not overlook the little things when designing large projects.
+                    </p>
+                </div>
+                <h2 class="cpu-subheading2">
+                    Break things down
+                </h2>
+                <div class="cpu-project-desc-wrapper">
+                    <p class="cpu-project-desc">
+                        When tackling big projects, we often overlook the little details in front of us and become blinded by accomplishing the end goal. It is important to realize that the final product can only be reached successfully if we tackle and complete each small step along the way. Never forget that parts make a whole. While building this CPU, I strove to break each part of the computer down into its individual modules and then break those modules down to the individual circuits that will make up the end product. By doing this, I was able to take a vastly complicated circuit and build it from the ground up from simple sections that, when put together, made up the complicated final circuits in the CPU. 
+                    </p>
+                </div>
+                <h2 class="cpu-subheading2">
+                    The importance of planning ahead
+                </h2>
+                <div class="cpu-project-desc-wrapper">
+                    <p class="cpu-project-desc">
+                        As I progressed through this project, one thing became apparent to me and that was the importance of planning ahead. Whether it was checking the length of my wires or ensuring there were enough slots on the breadboard to me to make connections or even ensuring I had enough modules for the computer to operate, progression through the project became a lot smoother after I learned how to plan ahead. The worst thing you want to happen is to move forwards blindly without considering what is coming next. When this happens, you will often find yourself having to go backward, fixing your mistakes before being able to progress again. Although taking the time to plan ahead may feel like wasted time, in the beginning, it is crucial for success in the long run.
+                    </p>
+                </div>
+                <h2 class="cpu-subheading">
+                    Some More Pictures and Vidoes of the CPU in Action!
+                </h2>
+                <video class="cpu-video" controls>
+                    <source src="./videos/multiply.mov" type="video/mp4">
+                </video>
+                <p class="caption">
+                    CPU performing 7 x 8 = 56 utilizing conditional branch instructions.
+                </p>
+                <img class="cpu-img" src="./imgs/cpu2.jpg">
+                <img class="cpu-img" src="./imgs/cpu3.jpg">
+                <a class="hvr-icon-back" href="./landing.html#projects">
+                    <button class="projects-btn">
+                        <i class="fa fa-arrow-left hvr-icon"></i>
+                        Go Back
+                    </button>
+                </a>
+                <span class="next-project">
+                    <a class="hvr-icon-forward" href="./guardian.html">
+                        <button class="projects-btn">
+                            Next Project
+                            <i class="fa fa-arrow-right hvr-icon"></i>
+                        </button>
+                    </a>
+                </span>
+            </div>
+        </div>
+        <script src="./scripts/scrollReveal.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

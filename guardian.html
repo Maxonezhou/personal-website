@@ -3,6 +3,7 @@
 <html lang="en">
     <head>
         <title> Max Zhou </title>
+        <link rel="stylesheet" href="./styles/generic-project.css">
         <link rel="stylesheet" href="./styles/guardian.css">
         <link rel="stylesheet" href="./styles/hover.css">
         <link rel="icon" href="./imgs/logo8.svg" type="image/svg">
@@ -33,17 +34,17 @@
                     </ul>
                 </div>
             </nav>
-            <div class="guardian-project">
+            <div class="generic-project-wrapper">
                 <a class="hvr-icon-back" href="./landing.html#projects">
                     <i class="fa fa-arrow-left hvr-icon back-arrow"></i>
                 </a>
-                <h2 class="guardian-project-title">
+                <h2 class="generic-project-title">
                     <strong> Guardian - IoT Firefighter Helmet </strong>
                 </h2>
-                <h2 class="guardian-hackathon">
+                <h2 class="generic-project-hackathon">
                     Hack the North 2019 Project
                 </h2>
-                <p class="guardian-prizes">
+                <p class="generic-project-prizes">
                     🏆 
                     <span class="hvr-underline-from-left-link">
                         <a class="link" href="https://hackthenorth.com/" target="_blank">Hack the North</a>
@@ -51,11 +52,19 @@
                     🏆 Major League Hacking Best Use of Google Cloud <br>
                     🏆 Canadian Special Operation Forces Command Award <br> <br>
                 </p>
-                <h2 class="guardian-subheading">
-                    Introduction
+                <h2 class="generic-project-subheading">
+                    Tech Stack
                 </h2>
-                <div class="guardian-project-desc-wrapper">
-                    <p class="guardian-project-desc">
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
+                        NodeMCU (Arduino Microcontroller) | C++ | VueJS | ApexChartsJS | Google Firebase | I2C Protocol | IoT
+                    </p>
+                </div>
+                <h2 class="generic-project-subheading">
+                    Inspiration
+                </h2>
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
                         One of the largest threats to firefighters is the inability to effectively monitor several different environmental vitals 
                         at the same time. Additional equipment and communication devices used by firefighters increase bulk and impede their ability 
                         to move when stuck in tough situations. Our team sought to tackle this issue by developing a novel, lightweight solution for 
@@ -69,80 +78,138 @@
                 </div>
                 <div class="guardian-project-img-flex">
                     <div class="img-flex-row">
-
+                        <img class="guardian-img-row" src="./imgs/guardian5.jpg">
+                        <img class="guardian-img-row" src="./imgs/guardian.jpg">
                     </div>
+                    <p class="generic-caption">
+                        Guardian IoT Firefighter Helmet
+                    </p>
                     <div class="img-flex-column">
-                        
+                        <img class="guardian-img-column first-image-column" src="./imgs/guardian1.jpg">
+                        <img class="guardian-img-column" src="./imgs/guardian2.jpg">
                     </div>
+                    <p class="caption">
+
+                    </p>
                 </div>
-            </div>
-
-            <!-- Footer -->
-            <footer class="page-footer font-small cyan darken-3">
-
-                <!-- Footer Elements -->
-                <div class="container">
-                    
-                
-                    <!-- Grid row-->
-                    <div class="row">
-
-                    <!-- Grid column -->
-                    <div class="col-md-12 py-5 footer-column">
-                        <h3> 
-                            Get In Touch.
-                        </h3>
-                        <h2>
-                            I believe in big ideas, welcome new opinions, and love meeting new people.
-                        </h2>
-                        <h3>
-                            Shoot me a message and lets build something amazing together.
-                        </h3>
-                        <div class="mb-5 flex-center">
-                
-                            <!-- Github -->
-                            <span class="hvr-grow">
-                                <a class="github-ic footer-icons" href="https://github.com/Maxonezhou">
-                                    <i class="fa fa-github"> </i>
-                                </a>
-                            </span>
-                            <!-- Linkedin -->
-                            <span class="hvr-grow">
-                                <a class="linkedin-ic footer-icons" href="https://linkedin.com/in/max-zhou">
-                                    <i class="fa fa-linkedin"> </i>
-                                </a>
-                            </span>
-                            <!-- Resume -->
-                            <span class="hvr-grow">
-                                <a class="resume-ic footer-icons" href="https://drive.google.com/file/d/1hBlM6braOAAo7Zo7Pdw1OqG5MbxK-QGz/view?usp=sharing">
-                                    <i class="fa fa-file-pdf-o"> </i>
-                                </a>
-                            </span>
-                            <!--Email -->
-                            <span class="hvr-grow">
-                                <a class="email-ic footer-icons" href="mailto:max.zhou@uwaterloo.ca">
-                                    <i class="fa fa-envelope-o"> </i>
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                    <!-- Grid column -->
-                
-                    </div>
-                    <!-- Grid row-->
-                
+                <h2 class="generic-project-subheading">
+                    How It Works
+                </h2>
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
+                        The Guardian firefighter helmet sends and retrieves information by using six sensors connected to a central microcontroller 
+                        (NodeMCU ESP8266) capable of connecting to nearby WiFi networks. When information from the environment is extracted, we are 
+                        able to send this information using WiFi following the IoT protocol to a remote Google Firebase real-time database where it is stored 
+                        and processed. When this information is retrieved, it is used to create a VueJS web user interface that displays the information 
+                        in a real-time UI to show changes as they happen. This interface allows all subscribers to the web app to monitor the 
+                        situation different firefighters are and providing assistance when needed.
+                    </p>
                 </div>
-                <!-- Footer Elements -->
-                
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">
-                Designed & Built by Max Zhou
+                <h2 class="generic-project-subheading">
+                    How It's Built
+                </h2>
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
+                        The microcontroller we used for this project is the NodeMCU board which is an Internet of Things enabled board built on top of the Arduino framework. We then attached several sensors to the board (DHT11 Temperature and Humidity Sensor, CCS811 Air Quality Sensor, BME280 Atmospheric and Pressure Sensor, and VEML6070 UV Index Sensor) following the I2C (Inter-Integrated Circuit) protocol where we used a multi-master/multi-slave architecture to allow sensors to publish and receive data to the bus system. When the data is received by the NodeMCU microcontroller, the data is sent over WiFi to a real-time Google Firebase database where it is categorized by sensor and type of data. This information is then retrieved and displayed on a web app user interface updated in real-time. The web app is built using the Vue.js framework to process the real-time data. Other areas of the web app such as the front-end design are built using the HTML5, CSS3, and Javascript. Additional features were implemented using Bootstrap, and ApexGraphs.
+                    </p>
+                </div>
+                <h2 class="generic-project-subheading">
+                    Challenges We Ran Into
+                </h2>
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
+                        Throughout the project, our team ran into several challenges regarding the hardware aspect of the implementation of the helmet. As this was our first time using the IOT framework, we found it difficult in the beginning to find a method of connecting to WiFi. When we initially tried to use an Arduino Uno board and connected an ESP8266 WiFi module to it, we found that the setup required to connect to Google Firebase required several external frameworks that we were unable to implement. As a result, we switched over to the NodeMCU board which had the ESP8266 WiFi chip already built into the board. However, since this is a much smaller microcontroller, the number of input and output data pins was half of that of the Arduino Uno. In order to counteract this, our team members learned to use the I2C protocol which allowed us to connect several sensors to only one bus and save the input and output pins.
+                    </p>
+                </div>
+                <h2 class="generic-project-subheading">
+                    What We Learned
+                </h2>
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
+                        This project taught us the importance of communication protocols. Since we had team members working on the software side as well as team members working on the hardware side. It was crucial for us to establish a communication protocol early on in the project as it is difficult for both teams to work on the project simultaneously if the software team was not retrieving data from the hardware team. In order to overcome this, we made sure to establish a solid form of communication of data so the software team knew exactly how to fetch the data and what format it would be in. By doing this, as the hardware team was integrating more sensors, the software team was able to generate their own faux data following the same communication protocol before real data was provided. This made integrating the two sides of the project at the end very easy and efficient.
+                    </p>
+                </div>
+                <a class="hvr-icon-back" href="./landing.html#projects">
+                    <button class="projects-btn go-back">
+                        <i class="fa fa-arrow-left hvr-icon"></i>
+                        Go Back
+                    </button>
+                </a>
+                <span class="next-project">
+                    <a class="hvr-icon-forward" href="./detritusAI.html">
+                        <button class="projects-btn">
+                            Next Project
+                            <i class="fa fa-arrow-right hvr-icon"></i>
+                        </button>
+                    </a>
+                </span>
             </div>
-            <!-- Copyright -->
-            
-            </footer>
-                <!-- Footer -->
         </div>
+        <!-- Footer -->
+        <footer class="page-footer font-small cyan darken-3">
+
+            <!-- Footer Elements -->
+            <div class="container">
+                
+            
+                <!-- Grid row-->
+                <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12 py-5 footer-column">
+                    <h3> 
+                        Get In Touch.
+                    </h3>
+                    <h2>
+                        I believe in big ideas, welcome new opinions, and love meeting new people.
+                    </h2>
+                    <h3>
+                        Shoot me a message and lets build something amazing together.
+                    </h3>
+                    <div class="mb-5 flex-center">
+            
+                        <!-- Github -->
+                        <span class="hvr-grow">
+                            <a class="github-ic footer-icons" href="https://github.com/Maxonezhou">
+                                <i class="fa fa-github"> </i>
+                            </a>
+                        </span>
+                        <!-- Linkedin -->
+                        <span class="hvr-grow">
+                            <a class="linkedin-ic footer-icons" href="https://linkedin.com/in/max-zhou">
+                                <i class="fa fa-linkedin"> </i>
+                            </a>
+                        </span>
+                        <!-- Resume -->
+                        <span class="hvr-grow">
+                            <a class="resume-ic footer-icons" href="https://drive.google.com/file/d/1hBlM6braOAAo7Zo7Pdw1OqG5MbxK-QGz/view?usp=sharing">
+                                <i class="fa fa-file-pdf-o"> </i>
+                            </a>
+                        </span>
+                        <!--Email -->
+                        <span class="hvr-grow">
+                            <a class="email-ic footer-icons" href="mailto:max.zhou@uwaterloo.ca">
+                                <i class="fa fa-envelope-o"> </i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <!-- Grid column -->
+            
+                </div>
+                <!-- Grid row-->
+            
+            </div>
+            <!-- Footer Elements -->
+            
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            Designed & Built by Max Zhou
+        </div>
+        <!-- Copyright -->
+        
+        </footer>
+            <!-- Footer -->
         <script src="./scripts/scrollReveal.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

@@ -1,4 +1,4 @@
-/* Stylesheet for cpu.html */
+/* Generic Stylesheet for Projects */
 
 *
 {
@@ -76,47 +76,62 @@ body {
     font-size: 1.5vw!important;
 }
 
-.forward-arrow {
-    text-decoration: none;
-    color: black;
-    font-size: 1.5vw!important;
+.link {
+    color: #8c1515;
 }
 
-.cpu-project {
+.link:hover
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: #8C1515;
+}
+
+.generic-project-wrapper {
     margin: 0 auto;
     width: 60vw;
 }
 
-.cpu-project-title {
-    text-align: center;
+.generic-project-hackathon {
+    font-size: 1.5vw;
+    margin-bottom: 1%;
+    color: #ffafaf;
+}
+
+.generic-project-prizes {
+    font-size: 0.8vw;
+}
+
+.generic-project-title {
     font-size: 1.8vw;
+    margin-top: 2%;
     margin-bottom: 2%;
 }
 
-.cpu-subheading {
+.generic-project-subheading {
     font-size: 1.5vw;
     margin-bottom: 2%;
     color: #ffafaf;
 }
 
-.cpu-subheading2 {
+.generic-project-subheading2 {
     font-size: 1.2vw;
     margin-bottom: 2%;
     color: #ffafaf;
 }
 
-.cpu-project-desc-wrapper {
+.generic-project-desc-wrapper {
     border-left: 0.5vw solid #ffafaf;
 }
 
-.cpu-project-desc {
+.generic-project-desc {
     font-size: 0.8vw;
     margin-bottom: 2%;
     margin-left: 2%;
     line-height: 170%;
 }
 
-.caption {
+.generic-caption {
     font-size: 0.9vw;
     width: 40vw;
     display: block;
@@ -125,7 +140,7 @@ body {
     color: rgb(175, 175, 175);
 }
 
-.cpu-video {
+.generic-project-video {
     width: 40vw;
     margin-bottom: 2%;
     display: block;
@@ -133,7 +148,7 @@ body {
     margin-right: auto;
 }
 
-.cpu-img {
+.generic-project-img {
     width: 40vw;
     height: auto;
     margin-bottom: 2%;
@@ -200,4 +215,5 @@ body {
 
 .footer-copyright {
     background-color: rgb(228, 228, 228);
+    font-size: 0.8vw;
 }

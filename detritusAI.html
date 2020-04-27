@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title> Max Zhou </title>
+        <link rel="stylesheet" href="./styles/generic-project.css">
+        <link rel="stylesheet" href="./styles/detritusAI.css">
+        <link rel="stylesheet" href="./styles/hover.css">
+        <link rel="icon" href="./imgs/logo8.svg" type="image/svg">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap" rel="stylesheet">
+        <!--<script src="https://unpkg.com/scrollreveal"></script>-->
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <script>
+            var scroll = ScrollReveal({ reset: false });
+        </script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md sticky-top navbar-light">
+                <a class="navbar-brand" href="./index.html"> <img src="./imgs/logo8.svg"><!-- <span class="logo-name"> <strong> Max Zhou </strong> </span> --> </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu ">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item nav1">
+                        <span class="hvr-underline-from-left"> <a class="nav-link" href="landing.html"> Home </a> </span>
+                        </li>
+                        <li class="nav-item nav6">
+                            <span class="hvr-underline-from-left"> <a class="nav-link nav-link-last" href="https://drive.google.com/file/d/1hBlM6braOAAo7Zo7Pdw1OqG5MbxK-QGz/view?usp=sharing" target="_blank"> Resume </a> </span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="generic-project-wrapper">
+                <a class="hvr-icon-back" href="./landing.html#projects">
+                    <i class="fa fa-arrow-left hvr-icon back-arrow"></i>
+                </a>
+                <h2 class="generic-project-title">
+                    <strong> DetritusAI - IoT Smart City Waste Collection System </strong>
+                </h2>
+                <h2 class="generic-project-hackathon">
+                    MakeUofT 2020 Project
+                </h2>
+                <p class="generic-project-prizes">
+                    🏆 
+                    <span class="hvr-underline-from-left-link">
+                        <a class="link" href="https://ieee.utoronto.ca/makeuoft/" target="_blank">MakeUofT</a>
+                    </span> Best Use of Solace PubSub+ Cloud Message Brokering Platform <br>
+                    🏆 Major League Hacking Best Use of Google Cloud <br> <br>
+                </p>
+                <h2 class="generic-project-subheading">
+                    Tech Stack
+                </h2>
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
+                        NodeMCU (Arduino Microcontroller) | C++ | Python | Raspberry Pi | Tensorflow | ReactJS | Solace PubSub+ | Google Maps API | I2C Protocol | IoT
+                    </p>
+                </div>
+                <h2 class="generic-project-subheading">
+                    Inspiration
+                </h2>
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
+                        The issue of waste management is something that many people view as trivial yet but is one of the most fundamental factors that
+                        affects the liveability of a city. Even in Canada, a developed country, only 9% of plastics are recycled, 
+                        meaning that the equivalent of 24 CN towers of recyclable plastic enters our landfills each year. In developing nations, 
+                        this is an even more serious issue that can have profound impacts on quality of life. <br> <br>
+
+                        In a world where manufacturing is at an all time high, waste management and waste collection are also at an all time high.
+                        Whether it is industrial landfills or urban waste collection, the need to create an efficient system to categorize and
+                        distribute efforts for waste collection is an imminent issue what many cities will need to face as we advance into the 
+                        era of IoT enabled smart cities. <br> <br>
+
+                        Our team at MakeUofT 2020 sought to tackle this issue by creating smart city waste containers which use machine learning and 
+                        object detection to categorize waste as either garbage or recycling, IoT enabled microcontrollers continuously monitor the capacity
+                        of each bin and this information is sent to a remote cloud platform where it is used to optimize waste collection routes based on the 
+                        capacity, distance, and current traffic patterns.
+                    </p>
+                </div>
+                <img class="generic-project-img" src="./imgs/detritusAI.jpg">
+                <p class="generic-caption">
+                    Image of DetritusAI waste containers, object detection camera on top prompts either lid (recycling or garbage) to open, under each lid are 
+                    Time of Flight sensors used to determine volume of container.
+                </p>
+                <img class="generic-project-img" src="./imgs/detritusAI2.jpg">
+                <p class="generic-caption">
+                    Image of front end Google Map UI used for route optimization. Each marker represents a DetritusAI container and under each marker is the 
+                    current state of the container.
+                </p>
+                <h2 class="generic-project-subheading">
+                    How It Works
+                </h2>
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
+                        Detritus AI is a smart garbage can that is able to detect and categorize waste into the respective containers and transmit essential 
+                        information that allows for the optimization of garbage routes. DetritusAI tracks the quantity of waste that is in each container and 
+                        communicates with the client-side applications used by garbage truck drivers to determine how full each container is. Based on the 
+                        capacity of each garbage can and its location, DetritusAI calculates the optimal route for garbage trucks to collect garbage while 
+                        minimizing distance and time, even taking into account traffic.
+                    </p>
+                </div>
+                <h2 class="generic-project-subheading">
+                    How It's Built
+                </h2>
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
+                        When users place an object near the garbage can, a time of flight sensor detects the object and triggers an image classification algorithm 
+                        that identifies the category of the waste. A message is sent using Solace's PubSub+ Cloud Message Brokering Platform, which instructs 
+                        the waste container to open the appropriate lid depending on if the classification is recycling or garbage. <br> <br>
+
+                        The image classification algorithm is run on a Raspberry Pi connected to wifi, when the time of flight sensor detects the objects, a message
+                        is published to a Solace PubSub topic and is recieved by the Pi which starts the image classification. After the object has been classified,
+                        the Pi publishes a PubSub message to either a Recycling or Garbage topic which the NodeMCU controlling the DetritusAI container reads and then
+                        opens the appropriate container to prompt the user to dispose of their waste. <br> <br>
+
+                        Within the garbage cans, the time of flight sensors continuously determines the capacity of the bin and communicates that information via 
+                        Solace to the ReactJS client-side application. The ReactJS application then displays the locations and capacities on a Google Maps UI and uses 
+                        this information to perform route optimization to allow for the most efficient method of collecting the waste. <br> <br>
+                        
+                        Using the Google Directions API, the optimal route for garbage collection is determined by factoring in traffic, distance, and the capacity
+                        of each bin. An optimal route is displayed on the dashboard, along with turn by turn directions for the driver to use.
+                    </p>
+                </div>
+                <div class="detritusAI-img-flex">
+                    <img class="detritusAI-img-flex1" src="./imgs/detritusAi-architecture.jpg">
+                    <img class="detritusAI-img-flex1" src="./imgs/solace.jpeg">
+                </div>
+                <p class="generic-caption flex-caption">
+                    Left: DetritusAI System Architecture. | 
+                    Right: Solace PubSub+ Topic Hierarchy
+                </p>
+                <h2 class="generic-project-subheading">
+                    What I Learned
+                </h2>
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
+                        This was the first project where I have used a PubSub platform to communicate between devices and applications. Normally, I would have
+                        used traditional REST protocol to establish the communication between our three services but given the asynchronous nature of this 
+                        project, I decided to leverage the power of a publish/subscribe architecture to develop DetritusAI. In the end, we were able to 
+                        utilize the full power of Solace's PubSub+ Message Brokering platform and were able to create communication between our NodeMCU
+                        Arduino Microcontroller, our Raspberry Pi, and our ReactJS front end using a single communication protocol.
+                    </p>
+                </div>
+                <h2 class="generic-project-subheading">
+                    Solace Blog
+                </h2>
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
+                        After the MakeUofT event, Solace published an article on their blog highlighting our project while also going into more detail about 
+                        how Solace technology was utilized in this project, feel free to check it out here:
+                        <a class="solace-blog" href="https://solace.com/blog/makeuoft-2020-smart-waste-disposal/">
+                            <span class="hvr-underline-from-left-link">
+                                Solace Blog.
+                            </span>
+                        </a>
+                    </p>
+                </div>
+                <a class="hvr-icon-back" href="./landing.html#projects">
+                    <button class="projects-btn go-back">
+                        <i class="fa fa-arrow-left hvr-icon"></i>
+                        Go Back
+                    </button>
+                </a>
+                <span class="next-project">
+                    <a class="hvr-icon-forward" href="./fireguard.html">
+                        <button class="projects-btn">
+                            Next Project
+                            <i class="fa fa-arrow-right hvr-icon"></i>
+                        </button>
+                    </a>
+                </span>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="page-footer font-small cyan darken-3">
+
+                <!-- Footer Elements -->
+                <div class="container">
+                    
+                
+                    <!-- Grid row-->
+                    <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-12 py-5 footer-column">
+                        <h3> 
+                            Get In Touch.
+                        </h3>
+                        <h2>
+                            I believe in big ideas, welcome new opinions, and love meeting new people.
+                        </h2>
+                        <h3>
+                            Shoot me a message and lets build something amazing together.
+                        </h3>
+                        <div class="mb-5 flex-center">
+                
+                            <!-- Github -->
+                            <span class="hvr-grow">
+                                <a class="github-ic footer-icons" href="https://github.com/Maxonezhou">
+                                    <i class="fa fa-github"> </i>
+                                </a>
+                            </span>
+                            <!-- Linkedin -->
+                            <span class="hvr-grow">
+                                <a class="linkedin-ic footer-icons" href="https://linkedin.com/in/max-zhou">
+                                    <i class="fa fa-linkedin"> </i>
+                                </a>
+                            </span>
+                            <!-- Resume -->
+                            <span class="hvr-grow">
+                                <a class="resume-ic footer-icons" href="https://drive.google.com/file/d/1hBlM6braOAAo7Zo7Pdw1OqG5MbxK-QGz/view?usp=sharing">
+                                    <i class="fa fa-file-pdf-o"> </i>
+                                </a>
+                            </span>
+                            <!--Email -->
+                            <span class="hvr-grow">
+                                <a class="email-ic footer-icons" href="mailto:max.zhou@uwaterloo.ca">
+                                    <i class="fa fa-envelope-o"> </i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                
+                    </div>
+                    <!-- Grid row-->
+                
+                </div>
+                <!-- Footer Elements -->
+                
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">
+                Designed & Built by Max Zhou
+            </div>
+            <!-- Copyright -->
+            
+            </footer>
+                <!-- Footer -->
+        <script src="./scripts/scrollReveal.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

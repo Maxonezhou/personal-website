@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title> Max Zhou </title>
+        <link rel="stylesheet" href="./styles/generic-project.css">
+        <link rel="stylesheet" href="./styles/fireguard.css">
+        <link rel="stylesheet" href="./styles/hover.css">
+        <link rel="icon" href="./imgs/logo8.svg" type="image/svg">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap" rel="stylesheet">
+        <!--<script src="https://unpkg.com/scrollreveal"></script>-->
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <script>
+            var scroll = ScrollReveal({ reset: false });
+        </script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md sticky-top navbar-light">
+                <a class="navbar-brand" href="./index.html"> <img src="./imgs/logo8.svg"><!-- <span class="logo-name"> <strong> Max Zhou </strong> </span> --> </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu ">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item nav1">
+                        <span class="hvr-underline-from-left"> <a class="nav-link" href="landing.html"> Home </a> </span>
+                        </li>
+                        <li class="nav-item nav6">
+                            <span class="hvr-underline-from-left"> <a class="nav-link nav-link-last" href="https://drive.google.com/file/d/1hBlM6braOAAo7Zo7Pdw1OqG5MbxK-QGz/view?usp=sharing" target="_blank"> Resume </a> </span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="generic-project-wrapper">
+                <a class="hvr-icon-back" href="./landing.html#projects">
+                    <i class="fa fa-arrow-left hvr-icon back-arrow"></i>
+                </a>
+                <h2 class="generic-project-title">
+                    <strong> Fireguard - IoT Forest Fire Detection System </strong>
+                </h2>
+                <h2 class="generic-project-hackathon">
+                    Queens Hacks 2020 Project
+                </h2>
+                <p class="generic-project-prizes">
+                    🏆
+                    <span class="hvr-underline-from-left-link">
+                        <a class="link" href="https://qhacks.io/" target="_blank">Queens Hacks</a>
+                    </span> 2020 Sunlife Financial Best Health Hack <br>
+                    🏆 Major League Hacking Best Use of Google Cloud <br><br>
+                </p>
+                <h2 class="generic-project-subheading">
+                    Tech Stack
+                </h2>
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
+                        NodeMCU (Arduino Microcontroller) | C++ | VueJS | Python | Google Firebase | I2C Protocol | IoT
+                    </p>
+                </div>
+                <h2 class="generic-project-subheading">
+                    Inspiration
+                </h2>
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
+                        The turn of the new year was accompanied by the news of fire ravaging most of Australia. In total, an estimated of over 1 billion 
+                        animals are estimated to have died along with over 25 million acres of land. The effects of the fire left a lasting impression on 
+                        our views of how technology can be used for good and helped us discover a newfound sense of purpose. We sought to use our technological 
+                        prowess to ensure that an issue like this doesn't become a common occurrence. Fireguard is an Internet of Things solution designed to 
+                        detect and prevent forest fires at the instant they arise. By placing this tool in different places in the forest, we are able to monitor
+                        important vitals about the environment and detect sudden changes in temperature, CO2 levels, atmospheric pressure and volume of total 
+                        organic compounds. We then retrieved this information and created a unique web user interface that responded to the real-time changes 
+                        in data to relay information across all individuals over watching the situation. <br> <br>
+
+                        The scope of our hackathon project was: <br> <br>
+                        
+                        • A hardware device that monitors environment conditions <br>
+                        • A dashboard that allows one to monitor the status of all the beacons and alert EMS if they detect sudden changes in environment conditions <br>
+                    </p>
+                </div>
+                <h2 class="generic-project-subheading">
+                    Our Team
+                </h2>
+                <img class="generic-project-img" src="./imgs/qhacks-min.JPG">
+                <h2 class="generic-project-subheading">
+                    How It Works
+                </h2>
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
+                        Fireguard is an IoT enabled beacon used to detect and predict the spread of forest fires. Equipped with temperature, humidity, CO2, TVOC,
+                        soil moisture, UV lights, Color Temperature, and light intensity sensors, Fireguard beacons transmit this information in real-time using
+                        IoT to a Google real-time Firebase database where it is then fetched and processed. Our team utilized time-series forecasting to detect 
+                        sudden abnormal changes in the data in order to detect symptoms of forest fires at the instant they start. Then, using the data and looking
+                        at pattern at which the Fireguard beacons start getting triggered, we are able to predict the direction of forest fire spread.
+                    </p>
+                </div>
+                <div class="fireguard-img-flex1">
+                    <img class="generic-project-img" src="./imgs/fireguard.jpg">
+                    <img class="generic-project-img" src="./imgs/fireguard4-min.jpg">
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+         <footer class="page-footer font-small cyan darken-3">
+
+            <!-- Footer Elements -->
+            <div class="container">
+                
+            
+                <!-- Grid row-->
+                <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12 py-5 footer-column">
+                    <h3> 
+                        Get In Touch.
+                    </h3>
+                    <h2>
+                        I believe in big ideas, welcome new opinions, and love meeting new people.
+                    </h2>
+                    <h3>
+                        Shoot me a message and lets build something amazing together.
+                    </h3>
+                    <div class="mb-5 flex-center">
+            
+                        <!-- Github -->
+                        <span class="hvr-grow">
+                            <a class="github-ic footer-icons" href="https://github.com/Maxonezhou">
+                                <i class="fa fa-github"> </i>
+                            </a>
+                        </span>
+                        <!-- Linkedin -->
+                        <span class="hvr-grow">
+                            <a class="linkedin-ic footer-icons" href="https://linkedin.com/in/max-zhou">
+                                <i class="fa fa-linkedin"> </i>
+                            </a>
+                        </span>
+                        <!-- Resume -->
+                        <span class="hvr-grow">
+                            <a class="resume-ic footer-icons" href="https://drive.google.com/file/d/1hBlM6braOAAo7Zo7Pdw1OqG5MbxK-QGz/view?usp=sharing">
+                                <i class="fa fa-file-pdf-o"> </i>
+                            </a>
+                        </span>
+                        <!--Email -->
+                        <span class="hvr-grow">
+                            <a class="email-ic footer-icons" href="mailto:max.zhou@uwaterloo.ca">
+                                <i class="fa fa-envelope-o"> </i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <!-- Grid column -->
+            
+                </div>
+                <!-- Grid row-->
+            
+            </div>
+            <!-- Footer Elements -->
+            
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            Designed & Built by Max Zhou
+        </div>
+        <!-- Copyright -->
+        
+        </footer>
+        <!-- Footer -->
+        <script src="./scripts/scrollReveal.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

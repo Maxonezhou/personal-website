@@ -35,7 +35,7 @@
                 </div>
             </nav>
             <div class="generic-project-wrapper">
-                <a class="hvr-icon-back" href="./landing.html#projects">
+                <a class="hvr-icon-back projects-back" href="./landing.html#projects">
                     <i class="fa fa-arrow-left hvr-icon back-arrow"></i>
                 </a>
                 <h2 class="generic-project-title">
@@ -56,9 +56,16 @@
                 </h2>
                 <div class="generic-project-desc-wrapper">
                     <p class="generic-project-desc">
-                        NodeMCU (Arduino Microcontroller) | C++ | VueJS | Python | Google Firebase | I2C Protocol | IoT
+                        NodeMCU (Arduino Microcontroller) | C++ | VueJS | HTML5/CSS3 | Bootstrap | ApexChartsJS | Python | Google Firebase | I2C Protocol | IoT
                     </p>
                 </div>
+                <h2 class="generic-project-subheading">
+                    Our Team
+                </h2>
+                <img class="generic-project-img" src="./imgs/qhacks-min.JPG">
+                <p class="generic-caption team">
+                    From left to right: Max Zhou, Adi Chha, Tyler Pinto, Vardan Shawhney
+                </p>
                 <h2 class="generic-project-subheading">
                     Inspiration
                 </h2>
@@ -80,10 +87,6 @@
                     </p>
                 </div>
                 <h2 class="generic-project-subheading">
-                    Our Team
-                </h2>
-                <img class="generic-project-img" src="./imgs/qhacks-min.JPG">
-                <h2 class="generic-project-subheading">
                     How It Works
                 </h2>
                 <div class="generic-project-desc-wrapper">
@@ -99,6 +102,50 @@
                     <img class="generic-project-img" src="./imgs/fireguard.jpg">
                     <img class="generic-project-img" src="./imgs/fireguard4-min.jpg">
                 </div>
+                <p class="generic-caption">
+                    Fireguard IoT Beacon
+                </p>
+                <h2 class="generic-project-subheading">
+                    How It's Built
+                </h2>
+                <h2 class="generic-project-subheading2">
+                    Machine Learning
+                </h2>
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
+                        The machine learning aspect one which we believed could play a key role in our solution yet needed a strong use case for. Initially, we wanted to use an attached camera and the google cloud vision API to confirm fires and reduce the number of false positives created by this data. After some thought, we realized that this would be a misuse of the data we collect and decided to use time series forecasting. This model works by detecting sudden changes in data in order to detect anomalies. We used a seasonality change model to account for large variations slowly brought upon over large amounts of time, such as season changes. In order to test, we simulated a fire on our device and tracked the data in a csv file. That data was passed into the model and the anomalies were rendered on our alert dashboard.
+                    </p>
+                </div>
+                <h2 class="generic-project-subheading2">
+                    Hardware
+                </h2>
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
+                        To accomplish the goals of FireGuard, we chose to use the NodeMCU which is an IoT (Internet of Things) enabled microcontroller built on top of the Arduino framework. We attached several sensors to the board to help us gather the vital environmental data needed to be sent to Google Cloud's Firebase Database. Some of these sensors included the DHT11 Temperature and Humidity Sensor, CCS811 Air Quality Sensor, VEML 6070 UV Index Sensor, SparkFun Soil Moisture Sensor, and the TCS34725 RGB Sensor. This combination of sensors and an IoT enabled microcontroller enables us to gather and upload data in a lightweight and efficient format, reducing latency and overhead in emergency situations.
+                    </p>
+                </div>
+                <h2 class="generic-project-subheading2">
+                    Front-End UI
+                </h2>
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
+                        The information on Google Firebase is then retrieved and displayed on a web app user interface updated in real-time taking advantage of the Google Maps API. The web app is built using the Vue.js framework to process the real-time data. Other areas of the web app such as the front-end design are built using the HTML5, CSS3, and Javascript. Additional features were implemented using Bootstrap, and ApexGraphs.
+                    </p>
+                </div>
+                <h2 class="generic-project-subheading2">
+                    Database
+                </h2>
+                <div class="generic-project-desc-wrapper">
+                    <p class="generic-project-desc">
+                        The data is received by the NodeMCU microcontroller is sent to a real-time Google Firebase database where it is categorized by sensor and type of data.
+                    </p>
+                </div>
+                <a class="hvr-icon-back" href="./landing.html#projects">
+                    <button class="projects-btn go-back">
+                        <i class="fa fa-arrow-left hvr-icon"></i>
+                        Go Back
+                    </button>
+                </a>
             </div>
         </div>
         <!-- Footer -->

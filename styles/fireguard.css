@@ -1,0 +1,16 @@
+/* Stylesheet for fireguard.html */
+
+.fireguard-img-flex1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.fireguard-img-flex1 img {
+    width: 29vw;
+    height: auto;
+}
+
+.team {
+    margin-top: 1%;
+    text-align: center;
+}

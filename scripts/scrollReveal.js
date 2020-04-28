@@ -150,6 +150,35 @@ for (x in footer) {
 }
 
 
+// Specific Projects 
+
+var specificProject = [
+    ".projects-back",
+    ".generic-project-title",
+    ".generic-project-subheading",
+    ".generic-project-desc",
+    ".generic-project-video",
+    ".generic-caption",
+    ".generic-project-img",
+    ".generic-project-subheading2",
+    ".go-back",
+    ".next-project",
+    ".generic-project-hackathon",
+    ".generic-project-prizes",
+    ".guardian-img-row",
+    ".guardian-img-column",
+    ".detritusAI-img-flex1"
+]
+
+counter = 200;
+for (x in specificProject) {
+    scroll.reveal(specificProject[x], {distance: '20%',
+                        origin: 'bottom',
+                        opacity: 0,
+                        delay: counter,
+                        cleanup: true
+                        });
+}
 //scroll.destroy();
 //scroll.reveal('.about-me-img', spotlight);*/
 /*if(performance.navigation.type == 2)

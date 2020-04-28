@@ -74,6 +74,22 @@ body {
     margin: 0 auto;
     width: 70vw;
 }
+
+.about-me-subheading {
+    font-size: 1.5vw;
+    margin-bottom: 2.5%;
+}
+
+.about-me-subheading2 {
+    font-size: 1vw;
+    line-height: 170%;
+}
+
+.about-me-description {
+    font-size: 0.8vw;
+    line-height: 170%;
+}
+
 .about-me-page1 {
     display: flex;
     flex-direction: row;
@@ -93,28 +109,21 @@ body {
     width: 50vw;
 }
 
-.about-me-page1-info h2 {
-    font-size: 1.5vw;
-    margin-bottom: 1%;
+.values {
+    font-size: 0.8vw;
 }
 
-.about-me-page1-info p {
-    font-size: 0.8vw;
-    line-height: 170%;
+.values-link {
+    color: #8c1515;
+}
+
+.values-link:hover {
+    text-decoration: none;
+    color: #8c1515;
 }
 
 .about-me-page2 {
-    margin-bottom: 3%;
-}
-
-.about-me-page2 h2 {
-    font-size: 1.5vw;
-    margin-bottom: 1%;
-}
-
-.about-me-page2 p {
-    font-size: 0.8vw;
-    line-height: 170%;
+    margin-bottom: 8%;
 }
 
 .img-row {
@@ -123,7 +132,7 @@ body {
     padding: 0 0.1vw;
 }
 
-/* Create two equal columns that sits next to each other */
+/* Create four equal columns that sits next to each other */
 .img-column {
     flex: 25%;
     padding: 0 0.1vw;
@@ -135,15 +144,29 @@ body {
     width: 17vw;
     height: auto;
 }
-  
 
-.values-link {
+.about-me-page3 {
+    margin-bottom: 2%;
+}
+
+.sport {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+
+.about-me-sports-img {
+    width: 25vw;
+    margin-right: 3%;
+}
+
+.mtb-link {
     color: #8c1515;
 }
 
-.values-link:hover {
-    text-decoration: none;
+.mtb-link:hover {
     color: #8c1515;
+    text-decoration: none;
 }
 
 .page-footer {

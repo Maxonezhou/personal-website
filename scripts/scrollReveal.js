@@ -136,7 +136,8 @@ var footer = [
     ".footer1",
     ".footer2",
     ".footer3",
-    ".footer-icons"
+    ".footer-icons",
+    ".footer-copyright"
 ]
 
 counter = 200;

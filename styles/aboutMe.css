@@ -1,0 +1,184 @@
+/* Stylesheet for aboutMe.html */
+
+*
+{
+    font-family: 'Open Sans';
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    animation: websiteFadein 2s;
+}
+
+@keyframes websiteFadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.navbar {
+
+    width: 100%;
+    top: 0;
+    background-color: white!important;
+    opacity: 90%;
+    height: 10vh;
+}
+
+.navbar-brand img {
+    margin-left: 3vw;
+    width: 50px;
+    /*width: 125px;*/
+    height: auto;
+}
+
+/*@media (max-width: 768px) {
+    .sticky-top {
+        position: static!important;
+    }
+}*/
+
+.nav-item {
+    margin-right: 2vw;
+}
+
+.nav-link {
+    color: black!important;
+}
+
+.nav-link:hover {
+    color: #8c1515!important;
+}
+
+.navbar-nav {
+    margin-right: 1vw;
+}
+
+.ml-auto {
+    text-align: center;
+    background-color:white;
+    opacity: 1;
+}
+
+.about-me-page {
+    margin: 0 auto;
+    width: 70vw;
+}
+.about-me-page1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+}
+
+.about-me-page1-img {
+    width: 20vw;
+    height: auto;
+    align-self: center;
+    margin-right: 3%;
+}
+
+.about-me-page1-info {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.about-me-page1-info h2 {
+    font-size: 1.5vw;
+    margin-bottom: 1%;
+}
+
+.about-me-page1-info p {
+    font-size: 0.8vw;
+    line-height: 170%;
+}
+
+.about-me-page2 {
+    margin-bottom: 3%;
+}
+
+.about-me-page2 h2 {
+    font-size: 1.5vw;
+    margin-bottom: 1%;
+}
+
+.about-me-page2 p {
+    font-size: 0.8vw;
+    line-height: 170%;
+}
+
+.img-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0.1vw;
+}
+
+/* Create two equal columns that sits next to each other */
+.img-column {
+    flex: 25%;
+    padding: 0 0.1vw;
+}
+
+.img-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 17vw;
+    height: auto;
+}
+  
+
+.values-link {
+    color: #8c1515;
+}
+
+.values-link:hover {
+    text-decoration: none;
+    color: #8c1515;
+}
+
+.page-footer {
+    margin-top: 5%;
+    background-color: rgb(246, 246, 246);
+}
+
+.footer-column {
+    text-align: left;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer-column h2 {
+    font-size: 1.5vw;
+}
+
+.footer-column h3 {
+    font-size: 1vw;
+}
+
+.footer-icons {
+    font-size: 2vw;
+    margin-right: 1.5vw;
+    cursor: pointer;
+    color: black;
+    text-decoration: none!important;
+}
+
+.footer-icons:hover {
+    color: #8c1515;
+}
+
+.footer-copyright {
+    background-color: rgb(228, 228, 228);
+    font-size: 0.8vw;
+}

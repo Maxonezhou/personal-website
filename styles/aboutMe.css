@@ -169,6 +169,37 @@ body {
     text-decoration: none;
 }
 
+.about-me-page4 {
+    margin-bottom: 2%;
+}
+
+.award-wrapper-flex {
+    display: flex;
+}
+
+.award-column {
+    flex: 50%;
+}
+
+.award-wrapper {
+    border-left: 0.5vw solid #ffafaf;
+    margin-bottom: 5%;
+}
+
+.award {
+    margin-left: 2%;
+    height: 15vh;
+}
+
+.award-title {
+    color: #ffafaf;
+    font-size: 1.2vw;
+}
+
+.award-desc {
+    font-size: 0.8vw;
+}
+
 .page-footer {
     margin-top: 5%;
     background-color: rgb(246, 246, 246);

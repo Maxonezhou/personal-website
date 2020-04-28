@@ -180,6 +180,61 @@ for (x in specificProject) {
                         cleanup: true
                         });
 }
+
+// About me Page - Does not include B&W pics section
+
+var aboutMepage = [
+    ".about-me-page1-img",
+    ".about-me-subheading",
+    ".about-me-subheading2",
+    ".about-me-description",
+    ".values",
+    ".about-me-sports-img",
+    ".about-me-subheading",
+    ".about-me-description",
+    ".award-wrapper"
+]
+
+counter = 200;
+for (x in aboutMepage) {
+    scroll.reveal(aboutMepage[x], {distance: '20%',
+                        origin: 'bottom',
+                        opacity: 0,
+                        delay: counter,
+                        cleanup: true
+                        });
+}
+
+// About me page B&W pics 
+var BWPics = [
+    ".bw1",
+    ".bw2",
+    ".bw3",
+    ".bw4",
+    ".bw5",
+    ".bw6",
+    ".bw7",
+    ".bw8",
+    ".bw9",
+    ".bw10",
+    ".bw11",
+    ".bw12",
+    ".bw13",
+    ".bw14",
+    ".bw15",
+    ".bw16"
+]
+
+counter = 200;
+for (x in BWPics) {
+    scroll.reveal(BWPics[x], {distance: '20%',
+                        origin: 'bottom',
+                        opacity: 0,
+                        delay: counter,
+                        cleanup: true
+                        });
+    counter = counter + 50;
+}
 //scroll.destroy();
 //scroll.reveal('.about-me-img', spotlight);*/
 /*if(performance.navigation.type == 2)

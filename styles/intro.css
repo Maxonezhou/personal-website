@@ -8,7 +8,7 @@
     top: 37vh;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
     .logo-animation {
         width: 80%;
         left: 24vw;

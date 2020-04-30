@@ -7,6 +7,10 @@
         height: auto;
     }
 
+    .nav-item {
+        opacity: 1!important;
+    }
+
     .intro {
         margin: 0 auto;
     }
@@ -385,7 +389,7 @@
     .cpu {
         margin: 0 auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 80vw;
         margin-bottom: 5%;
         border-left: 0.5vw solid #ffafaf;
@@ -439,7 +443,7 @@
     .guardian {
         margin: 0 auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 80vw;
         margin-bottom: 5%;
         border-left: 0.5vw solid #ffafaf;
@@ -503,7 +507,7 @@
     .detritusAI {
         margin: 0 auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 80vw;
         margin-bottom: 5%;
         border-left: 0.5vw solid #ffafaf;
@@ -567,7 +571,7 @@
     .fireguard {
         margin: 0 auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 80vw;
         margin-bottom: 5%;
         border-left: 0.5vw solid #ffafaf;

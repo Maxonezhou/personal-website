@@ -157,6 +157,7 @@ body {
 
 .about-me-sports-img {
     width: 25vw;
+    height: auto;
     margin-right: 3%;
     align-self: center;
 }
@@ -189,7 +190,7 @@ body {
 
 .award {
     margin-left: 2%;
-
+    height: 15vh;
 }
 
 .award-title {

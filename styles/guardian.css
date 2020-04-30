@@ -35,3 +35,41 @@
     height: auto;
     align-self: center;
 }
+
+@media only screen and (max-width: 500px) {
+    .guardian-project-img-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .img-flex-row {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+    }
+    
+    .generic-caption {
+        margin-top: 1%;
+        text-align: center;
+    }
+    
+    .guardian-img-row {
+        width: 40vw;
+        height: auto;
+    }
+    
+    .img-flex-column {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .first-image-column {
+        margin-bottom: 2%;
+    }
+    
+    .guardian-img-column {
+        width: 80vw;
+        height: auto;
+        align-self: center;
+    }
+}

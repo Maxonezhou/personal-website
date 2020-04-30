@@ -3,7 +3,10 @@
 <html lang="en">
     <head>
         <title> Max Zhou </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/style500.css">
         <link rel="stylesheet" href="./styles/hover.css">
         <link rel="icon" href="./imgs/logo8.svg" type="image/svg">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -19,7 +22,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md sticky-top navbar-light">
                 <a class="navbar-brand" href="./index.html"> <img src="./imgs/logo8.svg"><!-- <span class="logo-name"> <strong> Max Zhou </strong> </span> --> </a>
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu ">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarMenu">
@@ -74,7 +77,7 @@
                         <img class="intro-img" id="intro-img" src="./imgs/intro.svg">
                     </a>
                 </div>
-                <div class="transition-div"><a class="transition hvr-icon-hang" href="#about-me"><i class="fa fa-angle-down hvr-icon"></i></a></div>
+                <div class="transition-div"><span class="mobile-inactive"><a class="transition hvr-icon-hang" href="#about-me"><i class="fa fa-angle-down hvr-icon"></i></a></span></div>
             </div>
             <div class="icons" id="icons">
                 <ul>
@@ -86,7 +89,7 @@
                     <!--<li class="vertical-line2"></li>-->
                 </ul>
             </div>
-            <div class="about-me-inc" id="about-me">_</div>
+            <div class="about-me-inc inc" id="about-me">_</div>
             <div class="about-me">
                 <div class="about-me-flex">
                     <img class="about-me-img" src="./imgs/portrait.jpg">
@@ -107,8 +110,8 @@
                                 always stay a lifelong learner. 
                         </p>
                         <p class="quote">
-                            "Stay hungry, stay foolish" <br>
-                            - Steve Jobs
+                            "Here's to the crazy ones" <br>
+                            - Rob Siltanen
                         </p>
                         <h2 class="about-me3">
                             <strong> Here Are Some of My Skills. </strong>
@@ -155,7 +158,7 @@
                     </div>
                 </div>
             </div>
-            <div class="experience-me-inc" id="experience">_</div>
+            <div class="experience-me-inc inc" id="experience">_</div>
             <div class="experience" id="experience-div">
                 <div class="experience-title">
                     <strong> Here is What I've Done so Far. </strong>
@@ -192,6 +195,7 @@
                             I worked in the hardware division of the Canadian Special Operations Forces Command helping 
                             design and lead the deployment of new sensor hardware. I prototyped and leveraged IoT (Internet of Things) to 
                             integrate end-to-end solutions for sensor equipment and helped provide crucial information for command center personnel. 
+                            Additionally, I used Flutter and Dart to create mobile apps to display sensor readings for users to view on the go.
                         </p>
                     </div>
                 </div>
@@ -199,7 +203,7 @@
                     <img class="ford-img" src="./imgs/ford.png">
                     <div class="ford-info">
                         <h2>
-                            Firmware Developer @ <span class="company"> Ford Motor Company of Canada </span> 🚙
+                            Firmware Developer @ <span class="company"> Ford Motor Company of Canada </span> <span class="ford-car"> 🚙 </span>
                         </h2>
                         <h3>
                             📍Ottawa, ON
@@ -266,7 +270,7 @@
                     </div>
                 </div>
             </div>
-            <div class="projects-inc" id="projects">_</div>
+            <div class="projects-inc inc" id="projects">_</div>
             <div class="projects" id="projects-div">
                 <div class="projects-title">
                     <strong> Here's What I've Been Working On. </strong>
@@ -441,52 +445,41 @@
             Designed & Built by Max Zhou
         </div>
         </footer>
+        <script src="./scripts/typewriter.js"></script>
+        <script src="./scripts/scrollReveal.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script>
             //check for Navigation Timing API support
-            /*if (window.performance) {
+            if (window.performance) {
                 console.info("window.performance works fine on this browser");
             }
             if (performance.navigation.type == 1) {
                 window.location.href = "index.html";
             } else {
                 console.info( "This page is not reloaded");
-            }*/
-
-            function blastOff() {
-                console.log('hello');
-                document.getElementById("intro-img").style.position = "absolute";
-                document.getElementById("intro-img").style.animation = "blastOff 3s";
-                setTimeout(function() {
-                    document.getElementById("intro-img").style.removeProperty("animation");
-                    document.getElementById("intro-img").style.removeProperty("position");
-                }, 3000);
             }
 
-            /*window.addEventListener("scroll", function() {
-                var elementTarget = document.getElementById("footer");
-                //console.log("scrollY: ", window.scrollY);
-                //console.log("scrollY - innerHeight:", window.scrollY - window.innerHeight);
-                //console.log("offsetTop: ", elementTarget.offsetTop);
-                //console.log("offsetHeight: ", elementTarget.offsetHeight);
-                var height = window.screenY + window.outerHeight;
-                var bottom = height + window.scrollY;
-                //console.log("bottom", bottom);
-                if ((bottom >= (elementTarget.offsetTop - 200)) && (bottom <= (elementTarget.offsetTop + elementTarget.offsetHeight))) {
-                    document.getElementById("icons").style.position = "sticky"
-                    console.log("1");
-                }
+            $(function(){ 
+                var navMain = $(".navbar-collapse");
+                navMain.on("click", "a", null, function () {
+                    navMain.collapse('hide');
+                });
+            });
 
-                if (bottom < elementTarget.offsetTop - 400)
-                {
-                    document.getElementById("icons").style.position = "fixed"
-                    console.log("2");
+
+            function blastOff() {
+            width = window.matchMedia("(max-width: 500px)");
+                if (!width.matches) {
+                    document.getElementById("intro-img").style.position = "absolute";
+                    document.getElementById("intro-img").style.animation = "blastOff 3s";
+                    setTimeout(function() {
+                        document.getElementById("intro-img").style.removeProperty("animation");
+                        document.getElementById("intro-img").style.removeProperty("position");
+                    }, 3000);
                 }
-            });*/
+            }
         </script>
-        <script src="./scripts/typewriter.js"></script>
-        <script src="./scripts/scrollReveal.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
 </html>

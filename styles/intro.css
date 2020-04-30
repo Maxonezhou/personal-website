@@ -8,12 +8,20 @@
     top: 37vh;
 }
 
+@media only screen and (max-width: 500px) {
+    .logo-animation {
+        width: 80%;
+        left: 24vw;
+        top: 37vh;
+    }
+}
+
 #logo path:nth-child(2)
 {
     stroke-dasharray: 802;
     stroke-dashoffset: 801.3139038085938;
     animation-delay: 0.5s;
-    animation: lineDraw 2s ease forwards;
+    animation: lineDraw 1.5s ease forwards;
 }
 
 #logo path:nth-child(3)
@@ -21,7 +29,7 @@
     stroke-dasharray: 452;
     stroke-dashoffset: 451.5810852050781;
     animation-delay: 0.5s;
-    animation: lineDraw 2s ease forwards;
+    animation: lineDraw 1.5s ease forwards;
 }
 
 #logo path:nth-child(4)
@@ -29,7 +37,7 @@
     stroke-dasharray: 375;
     stroke-dashoffset: 374.9039306640625;
     animation-delay: 0.5s;
-    animation: lineDraw 2s ease forwards;
+    animation: lineDraw 1.5s ease forwards;
 }
 
 #logo path:nth-child(5)
@@ -37,7 +45,7 @@
     stroke-dasharray: 500;
     stroke-dashoffset: 499.50390625;
     animation-delay: 0.5s;
-    animation: lineDraw 2s ease forwards;
+    animation: lineDraw 1.5s ease forwards;
 }
 
 #logo path:nth-child(6)
@@ -45,7 +53,7 @@
     stroke-dasharray: 460;
     stroke-dashoffset: 459.5672607421875;
     animation-delay: 0.5s;
-    animation: lineDraw 2s ease forwards;
+    animation: lineDraw 1.5s ease forwards;
 }
 
 #logo path:nth-child(7)
@@ -53,7 +61,7 @@
     stroke-dasharray: 399;
     stroke-dashoffset: 398.18359375;
     animation-delay: 0.5s;
-    animation: lineDraw 2s ease forwards;
+    animation: lineDraw 1.5s ease forwards;
 }
 
 #logo path:nth-child(8)
@@ -71,7 +79,7 @@
     -o-animation: fadein 3s;
     width: 50vw;
     max-width: 80%;
-    animation: fadeinout 5s, fillLogo 0.5s ease forwards 2.5s;
+    animation: fadeinout 3s, fillLogo 0.5s ease forwards 1.5s;
 }
 
 @keyframes lineDraw {

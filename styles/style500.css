@@ -1,0 +1,665 @@
+@media only screen and (max-width: 500px) {
+    
+    .navbar-brand img {
+        margin-left: 3vw;
+        width: 40px;
+        /*width: 125px;*/
+        height: auto;
+    }
+
+    .intro {
+        margin: 0 auto;
+    }
+
+    .intro-flex {
+        display: flex;
+        margin-left: 8vw;
+        flex-direction: column-reverse;
+    }
+    
+    .intro-text {
+        margin-top: 13%;
+        margin-right: 5%;
+    }
+    
+    .intro1 {
+        font-size: 3.25vw;
+    }
+    
+    .intro2 {
+        font-size: 10vw;
+    }
+    
+    .intro3 {
+        font-size: 4.5vw;
+        margin-bottom: 3%;
+    }
+    
+    .wrap {
+        color: #8c1515;
+    }
+    
+    .intro4 {
+        font-size: 3.5vw;
+        margin-bottom: 5%;
+    }
+    
+    .intro-btn {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 8px;
+        text-align: center;
+        text-decoration: none;
+        padding: 2.75vw 3vw;
+        font-size: 3vw;
+    }
+    
+    .intro-btn a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .intro-img-click {
+        cursor: pointer;
+    }
+    
+    .intro-img {
+        width: 80vw;
+        height: auto;
+        margin-top: 8%;
+    }
+    
+    .transition-div {
+        margin-top: 5vh;
+        text-align: center;
+    }
+    
+    .mobile-inactive {
+        pointer-events: none;
+        cursor: default;
+    }
+    .transition {
+        cursor: pointer;
+    }
+    
+    .transition i {
+        font-size: 10vw;
+        color: #8c1515;
+    }
+    
+    .icons
+    {
+        display: none;
+        z-index: 1;
+        position: fixed;
+        top: 30.5vh;
+    }
+    
+    .about-me {
+        margin-top: 10vh;
+        margin-left: 2vw;
+    }
+    
+    .about-me-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-me-img {
+        /*align-self: center; to center image use this*/
+        display: block; /* puts image to the top */
+        height: auto;
+        width: 60vw;
+        margin-bottom: 7%;
+    }
+    
+    .about-me1 {
+        font-size: 3.8vw;
+    }
+    
+    .link {
+        color: #8c1515;
+    }
+    
+    .link:hover
+    {
+        text-decoration: none;
+        cursor: pointer;
+        color: #8C1515;
+    }
+    
+    .about-me2 {
+        width: 85vw;
+        font-size: 3.05vw;
+        line-height: 170%;
+    }
+    
+    .quote {
+        text-align: right;
+        font-style: italic;
+        font-size: 3.5vw;
+        color: #8c1515;
+    }
+    
+    .about-me3 {
+        font-size: 3.8vw;
+    }
+    
+    .about-me4 {
+        width: 85vw;
+        font-size: 3.05vw;
+        line-height: 170%;
+    }
+    
+    .skills-languages {
+        width: 85vw;
+        font-size: 3vw;
+        line-height: 170%;
+    }
+    
+    .skills-technologies {
+        width: 85vw;
+        font-size: 3vw;
+        line-height: 170%;
+        margin-bottom: 5%;
+    }
+    
+    .about-me-btn {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 8px;
+        text-align: center;
+        text-decoration: none;
+        padding: 2.75vw 3vw;
+        font-size: 3vw;
+    }
+    
+    .about-me-btn a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .experience {
+        margin-top: 11vh;
+    }
+    
+    .experience-title {
+        font-size: 3.8vw;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    
+    .company {
+        color: black;
+    }
+    
+    .ibm {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin-bottom: 3%;
+    }
+    
+    .ibm-img {
+        align-self: center;
+        width: 75vw;
+        height: auto;
+        margin-bottom: 5%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .ibm-info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .ibm-info h2 {
+        font-size: 3vw;
+        color: #8c1515;
+    }
+    
+    .ibm-info h3 {
+        font-size: 3vw;
+        color:rgb(47, 27, 158);
+    }
+    
+    .ibm-info p {
+        font-size: 2.5vw;
+    }
+
+    .cansofcom {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin-bottom: 3%;
+    }
+    
+    .cansofcom-img {
+        align-self: center;
+        width: 75vw;
+        height: auto;
+        margin-bottom: 5%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .cansofcom-info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cansofcom-info h2 {
+        font-size: 3vw;
+        color: #8c1515;
+    }
+    
+    .cansofcom-info h3 {
+        font-size: 3vw;
+        color:rgb(47, 27, 158);
+    }
+    
+    .cansofcom-info p {
+        font-size: 2.5vw;
+    }
+    
+    .ford {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin-bottom: 3%;
+    }
+    
+    .ford-img {
+        align-self: center;
+        width: 75vw;
+        height: auto;
+        margin-bottom: 5%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .ford-info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .ford-info h2 {
+        font-size: 3vw;
+        color: #8c1515;
+    }
+    
+    .ford-info h3 {
+        font-size: 3vw;
+        color:rgb(47, 27, 158);
+    }
+    
+    .ford-info p {
+        font-size: 2.5vw;
+    }
+
+    .ford-car {
+        display: none;
+    }
+    
+    .wato {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin-bottom: 3%;
+    }
+    
+    .wato-img {
+        align-self: center;
+        width: 75vw;
+        height: auto;
+        margin-bottom: 5%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .wato-info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .wato-info h2 {
+        font-size: 3vw;
+        color: #8c1515;
+    }
+    
+    .wato-info h3 {
+        font-size: 3vw;
+        color:rgb(47, 27, 158);
+    }
+    
+    .wato-info p {
+        font-size: 2.5vw;
+    }
+    
+    .uofc {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin-bottom: 3%;
+    }
+    
+    .uofc-img {
+        align-self: center;
+        width: 75vw;
+        height: auto;
+        margin-bottom: 5%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .uofc-info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .uofc-info h2 {
+        font-size: 3vw;
+        color: #8c1515;
+    }
+    
+    .uofc-info h3 {
+        font-size: 3vw;
+        color:rgb(47, 27, 158);
+    }
+    
+    .uofc-info p {
+        font-size: 2.5vw;
+    }
+    
+    .projects {
+        margin-top: 11vh;
+    }
+    
+    .projects-title {
+        font-size: 3.8vw;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    
+    .cpu {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin-bottom: 5%;
+        border-left: 0.5vw solid #ffafaf;
+    }
+    
+    .cpu-img-link {
+        cursor: pointer;
+    }
+    
+    .cpu-img {
+        width: 70vw;
+        height: auto;
+
+        margin: 3%;
+        margin-right: auto;
+    }
+    
+    .cpu-info {
+        display: block;
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-left: 3%;
+    }
+    
+    .cpu-info h2 {
+        font-size: 3.2vw;
+        margin-bottom: 3%;
+    }
+    
+    .cpu-info p {
+        font-size: 3vw;
+        margin-bottom: 5%;
+    }
+    
+    .cpu-btn {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 8px;
+        text-align: center;
+        text-decoration: none;
+        padding: 2.75vw 3vw;
+        font-size: 3vw;
+        margin-bottom: 5%;
+    }
+    
+    .cpu-btn a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .guardian {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin-bottom: 5%;
+        border-left: 0.5vw solid #ffafaf;
+    }
+    
+    .guardian-img-link {
+        cursor: pointer;
+    }
+    
+    .guardian-img {
+        width: 70vw;
+        height: auto;
+
+        margin: 3%;
+        margin-right: auto;
+    }
+    
+    .guardian-info {
+        display: block;
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-left: 3%;
+    }
+    
+    .guardian-info h2 {
+        font-size: 3.2vw;
+        margin-bottom: 3%;
+    }
+    
+    .guardian-info p {
+        font-size: 3vw;
+        margin-bottom: 5%;
+    }
+    
+    .guardian-btn {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 8px;
+        text-align: center;
+        text-decoration: none;
+        padding: 2.75vw 3vw;
+        font-size: 3vw;
+        margin-bottom: 5%;
+    }
+    
+    .guardian-btn a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .guardian-socials {
+        color: black;
+        font-size: 5vw;
+        margin-left: 2vw;
+    }
+    
+    .guardian-socials:hover {
+        color: #8c1515;
+    }
+    
+    .detritusAI {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin-bottom: 5%;
+        border-left: 0.5vw solid #ffafaf;
+    }
+    
+    .detritusAI-img-link {
+        cursor: pointer;
+    }
+    
+    .detritusAI-img {
+        width: 70vw;
+        height: auto;
+
+        margin: 3%;
+        margin-right: auto;
+    }
+    
+    .detritusAI-info {
+        display: block;
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-left: 3%;
+    }
+    
+    .detritusAI-info h2 {
+        font-size: 3.2vw;
+        margin-bottom: 3%;
+    }
+    
+    .detritusAI-info p {
+        font-size: 3vw;
+        margin-bottom: 5%;
+    }
+    
+    .detritusAI-btn {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 8px;
+        text-align: center;
+        text-decoration: none;
+        padding: 2.75vw 3vw;
+        font-size: 3vw;
+        margin-bottom: 5%;
+    }
+    
+    .detritusAI-btn a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .detritusAI-socials {
+        color: black;
+        font-size: 5vw;
+        margin-left: 2vw;
+    }
+    
+    .detritusAI-socials:hover {
+        color: #8c1515;
+    }
+    
+    .fireguard {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin-bottom: 5%;
+        border-left: 0.5vw solid #ffafaf;
+    }
+    
+    .fireguard-img-link {
+        cursor: pointer;
+    }
+    
+    .fireguard-img {
+        width: 70vw;
+        height: auto;
+
+        margin: 3%;
+        margin-right: auto;
+    }
+    
+    .fireguard-info {
+        display: block;
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-left: 3%;
+    }
+    
+    .fireguard-info h2 {
+        font-size: 3.2vw;
+        margin-bottom: 3%;
+    }
+    
+    .fireguard-info p {
+        font-size: 3vw;
+        margin-bottom: 5%;
+    }
+    
+    .fireguard-btn {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 8px;
+        text-align: center;
+        text-decoration: none;
+        padding: 2.75vw 3vw;
+        font-size: 3vw;
+        margin-bottom: 5%;
+    }
+    
+    .fireguard-btn a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .fireguard-socials {
+        color: black;
+        font-size: 5vw;
+        margin-left: 2vw;
+    }
+    
+    .fireguard-socials:hover {
+        color: #8c1515;
+    }
+    
+    .page-footer {
+        margin-top: 5%;
+        background-color: rgb(246, 246, 246);
+    }
+    
+    .footer-column {
+        text-align: left;
+        margin-top: 3%;
+    }
+    
+    .footer-column h2 {
+        font-size: 3.5vw;
+    }
+    
+    .footer-column h3 {
+        font-size: 3vw;
+    }
+    
+    .footer-icons {
+        font-size: 5vw;
+        margin-right: 3.5vw;
+        cursor: pointer;
+        color: black;
+        text-decoration: none!important;
+    }
+    
+    .footer-icons:hover {
+        color: #8c1515;
+    }
+    
+    .footer-copyright {
+        background-color: rgb(228, 228, 228);
+        font-size: 3.2vw;
+    }
+}
